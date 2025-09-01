@@ -1,0 +1,29 @@
+<div class="container py-4" *ngIf="product">
+  <div class="row g-4">
+    <div class="col-md-6">
+      <img [src]="product.image" [alt]="product.name" class="w-100 rounded-3 shadow-sm object-fit-cover" style="height: 480px;">
+    </div>
+    <div class="col-md-6">
+      <a routerLink="/" class="small text-decoration-none text-secondary">← Back</a>
+      <h2 class="mt-2">{{ product.name }}</h2>
+      <div class="d-flex align-items-center gap-2 mb-2">
+        <span class="badge text-bg-dark rounded-pill">${{ product.price }}</span>
+        <span class="text-secondary small">{{ product.category }}</span>
+      </div>
+      <p class="text-secondary">{{ product.description }}</p>
+
+      <div class="row g-2 mb-3" *ngIf="product.sizes?.length">
+        <div class="col-12"><small class="fw-semibold">Size</small></div>
+        <div class="col-auto" *ngFor="let s of product.sizes">
+          <button class="btn btn-sm btn-outline-dark rounded-pill px-3">{{ s }}</button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3" style="max-width: 220px;">
+        <span class="input-group-text">Qty</span>
+        <input type="number" class="form-control" value="1" oninput="this.nextElementSibling.value=this.value" min="1">
+        <button class="btn btn-dark" (click)="addToCart()">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>

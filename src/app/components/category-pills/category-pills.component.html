@@ -1,0 +1,4 @@
+<div class="d-flex flex-wrap gap-2">
+  <button *ngFor="let c of categories" class="btn btn-sm" [class.btn-dark]="active===c"
+    [class.btn-outline-dark]="active!==c" (click)="change.emit(c)">{{ c }}</button>
+</div>
