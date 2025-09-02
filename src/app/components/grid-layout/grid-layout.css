@@ -1,0 +1,27 @@
+.cardish {
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .35);
+    overflow: hidden
+}
+
+.cardish img {
+    width: 100%;
+    display: block
+}
+
+.cardish .p {
+    padding: 1rem
+}
+
+.tall-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+}
+
+/* Optional nicer centering while sticky */
+.sticky-offset {
+    padding-top: 20vh
+}
+
+/* pushes content down; sticky-top keeps it there */

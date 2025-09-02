@@ -5,16 +5,17 @@ import { ProductService } from '../../services/product.service';
 import { CategoryPillsComponent } from '../../components/category-pills/category-pills.component';
 import { ProductCardComponent } from '../../components/product-card/product-card.component';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
+import { GridLayout } from '../../components/grid-layout/grid-layout';
 
 @Component({
   standalone: true,
   selector: 'app-home',
   imports: [
     CommonModule,
-    RouterLink,
     CategoryPillsComponent,
     ProductCardComponent,
     NavbarComponent,
+    GridLayout,
   ],
   templateUrl: './home.component.html',
   styleUrl: './homepage.css',

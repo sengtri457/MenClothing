@@ -63,6 +63,10 @@
     animation: anim 1s linear infinite;
 }
 
+.btn-menu {
+    animation: pop 3s infinite;
+}
+
 @keyframes anim {
 
     0%,
@@ -72,5 +76,16 @@
 
     50% {
         transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+}
+
+
+@keyframes pop {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
     }
 }
