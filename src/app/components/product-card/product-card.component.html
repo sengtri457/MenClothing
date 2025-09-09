@@ -1,6 +1,6 @@
 @defer (on timer(3000ms)) {
-<div class="card product-card h-100 border-0 shadow-sm">
-  <a [routerLink]="['/product', product.id]" class="text-decoration-none text-dark">
+<div class="card product-card h-100 border-0 shadow-sm overflow-hidden">
+  <a [routerLink]="['/product', product.id]" class="text-decoration-none text-dark a-img">
     <img [src]="product.image" [alt]="product.name" class="card-img-top object-fit-cover" style="height: 260px;">
   </a>
   <div class="card-body">

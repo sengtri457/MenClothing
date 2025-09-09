@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { HostListener, Injectable } from '@angular/core';
 import { Product } from '../models/product.model';
 
 @Injectable({ providedIn: 'root' })
