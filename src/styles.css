@@ -17,6 +17,12 @@
     --body-bg-color-darker: #d3d8db;
     --body-color: #070707;
     --link-color: #000;
+    --primary-black: #000000;
+    --secondary-black: #1a1a1a;
+    --light-gray: #f8f9fa;
+    --dark-gray: #6c757d;
+    --white: #ffffff;
+    --hover-gray: #e9ecef;
     --link-color-hover: #212529;
     --accent-color: #e83131;
     --accent-text-color: #fff;

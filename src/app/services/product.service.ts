@@ -3,7 +3,7 @@ import { Product } from '../models/product.model';
 
 @Injectable({ providedIn: 'root' })
 export class ProductService {
-  private items: Product[] = [
+  public items: Product[] = [
     {
       id: 1,
       name: 'Classic Black Leather Jacket',

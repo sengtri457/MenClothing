@@ -5,6 +5,7 @@ import { CategoryPillsComponent } from '../../components/category-pills/category
 import { ProductCardComponent } from '../../components/product-card/product-card.component';
 import { GridLayout } from '../../components/grid-layout/grid-layout';
 import { Info } from '../../components/info/info';
+import { RouterLink } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -15,6 +16,7 @@ import { Info } from '../../components/info/info';
     ProductCardComponent,
     GridLayout,
     Info,
+    RouterLink,
   ],
   templateUrl: './home.component.html',
   styleUrl: './homepage.css',
