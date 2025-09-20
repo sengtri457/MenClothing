@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8 hero-content">
-                <h1 class="hero-title fade-in">Tshirt Collection</h1>
+                <h1 class="hero-title fade-in">Accessory</h1>
                 <p class="hero-subtitle fade-in">Discover premium fashion that defines your style</p>
                 <button class="btn btn-primary-custom fade-in">Shop Collection</button>
             </div>
@@ -12,9 +12,9 @@
 </section>
 
 <!-- Category Navigation -->
-<section class="categoryFilter mb-4 ">
+<!-- <section class="categoryFilter mb-4 ">
     <app-category-pills [categories]="categories" [active]="active" (change)="setCategory($event)"></app-category-pills>
-</section>
+</section> -->
 
 <!-- Filters Section -->
 <section class="filters-section">
@@ -62,9 +62,9 @@
 </section>
 <section class="container mt-5">
     <div class="row">
-        @for (p of products; track $index) {
+        @for (p of accessories; track $index) {
         <div class="col-6 col-md-4 col-lg-3 mb-4">
-            <app-product-card [product]="p" />
+            <app-acessoriescard [Accessory]="p" />
         </div>
         }
     </div>

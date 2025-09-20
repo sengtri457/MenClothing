@@ -1,4 +1,11 @@
-<div class="d-flex flex-wrap gap-2">
-  <button *ngFor="let c of categories" class="btn btn-sm" [class.btn-dark]="active===c"
-    [class.btn-outline-dark]="active!==c" (click)="change.emit(c)">{{ c }}</button>
-</div>
+<!-- Category Navigation -->
+<section class="category-nav">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <button *ngFor="let c of categories" class="btn category-btn" [class.category-btn-dark]="active===c"
+          [class.category-btn]="active!==c" (click)="change.emit(c)">{{ c }}</button>
+      </div>
+    </div>
+  </div>
+</section>

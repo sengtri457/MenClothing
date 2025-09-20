@@ -26,6 +26,7 @@ export class HomeComponent {
   active = 'All';
   categories = this.ps.getCategories();
   products = this.ps.getAll();
+  newArrive = this.ps.getAllNewArrive();
   menu = inject(ProductService);
 
   setCategory(c: string) {

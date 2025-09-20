@@ -19,7 +19,8 @@
                             class="fa-solid fa-magnifying-glass"></i></a>
                 </li>
                 <li class="nav-item ms-lg-3">
-                    <a class="btn btn-dark rounded-pill px-3" href="#">Cart (0)</a>
+                    <a class="btn btn-dark rounded-pill px-3" href="#" data-bs-toggle="offcanvas"
+                        data-bs-target="#cartDetail">Cart ({{cartItem.items.length}})</a>
                 </li>
             </ul>
         </div>
@@ -30,7 +31,8 @@
     <div class="offcanvas-body"> <!-- From Uiverse.io by boryanakrasteva -->
         <div class="wrapper-search m-auto w-100  text-center">
             <div class="input-container">
-                <input type="text" name="text" class="input" placeholder="search...">
+                <input type="text" id="search-input" name="search-input" class="input" placeholder="search..." s
+                    [(ngModel)]="searchRouter" (ngModelChange)="searchItemsRoute()" />
                 <span class="icon">
                     <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -53,6 +55,53 @@
             <div class="wrapper-off">
                 <button type="button" class="btn-close mt-5" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+        </div>
+    </div>
+</div>
+<!-- Offcanvas Cart -->
+<div class="offcanvas offcanvas-start text-bg-dark cart-canvas " tabindex="-1" id="cartDetail">
+    <div class="offcanvas-header border-bottom border-secondary">
+        <h5 class="offcanvas-title fw-bold" style="margin-top: 90px;">Your Cart</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column pt-4">
+        <!-- Cart Items -->
+        <div *ngIf="cartItem.items.length > 0; else emptyCart" class="cart-items flex-grow-1 overflow-auto pe-2">
+            <div *ngFor="let item of cartItem.items" class="cart-item d-flex align-items-center mb-3 p-2 rounded">
+                <img [src]="item.product.image" class="cart-img rounded me-3">
+                <div class="flex-grow-1">
+                    <h6 class="mb-1">{{ item.product.name }}</h6>
+                    <small class="text-secondary">Size: {{ item.selectedSize }} | Qty: {{ item.qty }}</small>
+                    <div class="fw-bold mt-1">
+                        <input type="number" min="1" [(ngModel)]="item.qty"
+                            (ngModelChange)="navBar.updateQuantity(item, item.qty)"
+                            class=" w-25 me-2 rounded-5 border-0 px-2">
+                        <br>
+                        Total: ${{ item.product.price * item.qty }}
+                    </div>
+                </div>
+                <button class="btn btn-sm btn-danger ms-2 rounded-5" (click)="cartItem.remove(item.product.id)">
+                    <i class="bi bi-trash"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Empty State -->
+        <ng-template #emptyCart>
+            <div class="text-center text-secondary mt-5">
+                <i class="bi bi-bag-x fs-1"></i>
+                <p class="mt-3">Your cart is empty</p>
+            </div>
+        </ng-template>
+
+        <!-- Cart Footer -->
+        <div class="cart-footer border-top border-secondary pt-3 mt-3">
+            <div class="d-flex justify-content-between mb-3">
+                <span class="fw-semibold">Total</span>
+                <span class="fw-bold">${{ navBar.getTotal() }}</span>
+            </div>
+            <button class="btn btn-light w-100 fw-bold">Checkout</button>
         </div>
     </div>
 </div>

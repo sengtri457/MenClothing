@@ -13,15 +13,12 @@
     padding: 1rem
 }
 
-.tall-column {
+s .tall-column {
     display: flex;
     flex-direction: column;
     gap: 1.5rem
 }
 
-/* Optional nicer centering while sticky */
-.sticky-offset {
-    padding-top: 20vh
-}
+
 
 /* pushes content down; sticky-top keeps it there */

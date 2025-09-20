@@ -8,6 +8,13 @@
       <h6 class="card-title mb-1">{{ product.name }}</h6>
       <span class="badge text-bg-dark rounded-pill">${{ product.price }}</span>
     </div>
+    <small class="fw-semibold">Size
+      @if (product.sizes) {
+      <span class="text-success">Available</span>
+      }@else {
+      <span>N/A</span>
+      }
+    </small>
     <p class="card-text small text-secondary mb-2">{{ product.category }}</p>
     <a [routerLink]="['/product', product.id]" class="stretched-link"></a>
   </div>

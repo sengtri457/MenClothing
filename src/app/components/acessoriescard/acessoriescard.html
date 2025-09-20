@@ -1,0 +1,40 @@
+@defer (on timer(3000ms)) {
+<div class="card product-card h-100 border-0 shadow-sm overflow-hidden">
+    <a [routerLink]="['/Accessory', Accessory.id]" class="text-decoration-none text-dark a-img">
+        <img [src]="Accessory.image" [alt]="Accessory.name" class="card-img-top object-fit-cover"
+            style="height: 260px;">
+    </a>
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-start">
+            <h6 class="card-title mb-1">{{ Accessory.name }}</h6>
+            <span class="badge text-bg-dark rounded-pill">${{ Accessory.price }}</span>
+        </div>
+        <small class="fw-semibold">Size
+            @if (Accessory.sizes) {
+            <span class="text-success">Available</span>
+            }@else {
+            <span>N/A</span>
+            }
+        </small>
+        <p class="card-text small text-secondary mb-2">{{ Accessory.category }}</p>
+        <a [routerLink]="['/Accessory', Accessory.id]" class="stretched-link"></a>
+    </div>
+</div>
+} @placeholder {
+<div class="card product-card h-100 border-0 shadow-sm">
+    <!-- Image Skeleton -->
+    <div class="skeleton-img card-img-top" style="height: 260px;"></div>
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-start">
+            <!-- Product Name Skeleton -->
+            <div class="skeleton-text skeleton-title mb-1"></div>
+            <!-- Price Badge Skeleton -->
+            <div class="skeleton-badge rounded-pill"></div>
+        </div>
+        <!-- Category Skeleton -->
+        <div class="skeleton-text skeleton-category mb-2"></div>
+    </div>
+</div>
+}@error {
+<p>Failed to load large component.</p>
+}

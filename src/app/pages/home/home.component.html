@@ -41,7 +41,7 @@
         </div>
         <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s"
           style="visibility: visible; animation-delay: 0.1s; animation-name: slideInLeft;">
-          <div class="timeline-date">Clothing</div>
+          <div class="timeline-date" routerLink="/men">Clothing</div>
           <div class="timeline-text aos-init aos-animate" data-aos="fade-up"
             style="background-color: transparent;box-shadow: none;">
             <div class="content-vision">
@@ -66,7 +66,7 @@
         </div>
         <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s"
           style="visibility: visible; animation-delay: 0.1s; animation-name: slideInLeft;">
-          <div class="timeline-date">Shoes</div>
+          <div class="timeline-date" routerLink="/shoes">Shoes</div>
           <div class="timeline-text aos-init aos-animate" data-aos="fade-up"
             style="background-color: transparent;box-shadow: none;">
             <div class="content-vision">
@@ -90,7 +90,7 @@
         </div>
         <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s"
           style="visibility: visible; animation-delay: 0.1s; animation-name: slideInLeft;">
-          <div class="timeline-date">Acessories</div>
+          <div class="timeline-date" routerLink="/Accessory">Acessories</div>
           <div class="timeline-text aos-init aos-animate" data-aos="fade-up"
             style="background-color: transparent;box-shadow: none;">
             <div class="content-vision">
@@ -249,13 +249,20 @@
     </div>
   </div>
 </section>
-<!-- CATEGORY FILTER -->
-<section class="container py-3 mt-3">
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <h5 class="mb-0">New Arrivals</h5>
-    <app-category-pills [categories]="categories" [active]="active" (change)="setCategory($event)"></app-category-pills>
+<section class="container">
+  <div class="row g-4">
+    <h2>New Arrive</h2>
+    <div class="col-6 col-md-4 col-lg-3" *ngFor="let p of newArrive">
+      <app-product-card [product]="p"></app-product-card>
+    </div>
   </div>
 </section>
+<!-- CATEGORY FILTER -->
+<section class="container py-3 mt-3">
+  <h2>Most Selling Product</h2>
+
+  <app-category-pills [categories]="categories" [active]="active" (change)="setCategory($event)"></app-category-pills>
+</section>s
 <!-- PRODUCT GRID -->
 <section class="container">
   <div class="row g-4">
