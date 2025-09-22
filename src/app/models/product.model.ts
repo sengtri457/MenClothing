@@ -8,6 +8,26 @@ export interface Product {
   sizes?: string[];
   colors?: string[];
 }
+export interface Hoodie {
+  id: number;
+  name: string;
+  category: 'Crew Neck' | 'Hoodies' | 'Sweatshirts';
+  price: number;
+  image: string;
+  description: string;
+  sizes?: string[];
+  colors?: string[];
+}
+export interface Tracksuits {
+  id: number;
+  name: string;
+  category: 'Tracksuit Tops' | 'Tracksuit Bottoms' | 'Tracksuit Sets';
+  price: number;
+  image: string;
+  description: string;
+  sizes?: string[];
+  colors?: string[];
+}
 export interface Shoes {
   id: number;
   name: string;

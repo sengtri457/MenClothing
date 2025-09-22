@@ -1,3 +1,4 @@
+import { Hoodies } from './components/hoodies/hoodies';
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
@@ -6,9 +7,22 @@ import { Shoes } from './components/shoes/shoes';
 import { ShoesDetail } from './components/shoes-detail/shoes-detail';
 import { Acessoriesdetail } from './components/acessoriesdetail/acessoriesdetail';
 import { Acessoris } from './components/acessoris/acessoris';
+import { HoodiesDetail } from './components/hoodies-detail/hoodies-detail';
+import { Tracksuits } from './components/tracksuits/tracksuits';
+import { TracksuitsDetail } from './components/tracksuits-detail/tracksuits-detail';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent, title: "PhsarMaterk — Men's Fashion" },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+
+  {
+    path: 'home',
+    component: HomeComponent,
+    title: "PhsarMaterk — Men's Fashion",
+  },
   {
     path: 'product/:id',
     component: ProductDetailComponent,
@@ -27,6 +41,22 @@ export const routes: Routes = [
   {
     path: 'men',
     component: Mensection,
+  },
+  {
+    path: 'track',
+    component: Tracksuits,
+  },
+  {
+    path: 'track/:id',
+    component: TracksuitsDetail,
+  },
+  {
+    path: 'hoodie',
+    component: Hoodies,
+  },
+  {
+    path: 'hoodie/:id',
+    component: HoodiesDetail,
   },
   {
     path: 'Accessory',

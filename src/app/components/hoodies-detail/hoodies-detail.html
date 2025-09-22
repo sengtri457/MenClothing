@@ -1,0 +1,37 @@
+<div class="container py-4" *ngIf="hoodie">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <img [src]="hoodie.image" [alt]="hoodie.name" class="w-100 rounded-3 shadow-sm object-fit-cover"
+                style="height: 480px;">
+        </div>
+        <div class="col-md-6">
+            <a routerLink="/hoodie" class="small text-decoration-none text-secondary">← Back</a>
+            <h2 class="mt-2">{{ hoodie.name }}</h2>
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge text-bg-dark rounded-pill">${{ hoodie.price }}</span>
+                <span class="text-secondary small">{{ hoodie.category }}</span>
+            </div>
+            <p class="text-secondary">{{ hoodie.description }}</p>
+
+            <div class="row g-2 mb-3" *ngIf="hoodie.sizes?.length">
+                <div class="col-12"><small class="fw-semibold">Size</small></div>
+
+                @for (item of hoodie.sizes; track $index) {
+                <div class="col-auto">
+                    <button class="btn btn-sm btn-outline-dark rounded-pill px-3"
+                        (click)="selectedSize = item; hoodie.size = item"
+                        [class.btn-dark]="selectedSize === item">{{ item }}
+                    </button>
+                </div>
+                }
+            </div>
+
+            <div class="input-group mb-3" style="max-width: 220px;">
+                <span class="input-group-text">Qty</span>
+                <input type="number" class="form-control" min="1" [(ngModel)]="qty">
+                <button class="btn btn-dark" (click)="addShoesToCart()" data-bs-toggle="offcanvas"
+                    data-bs-target="#cartDetail">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>

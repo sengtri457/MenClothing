@@ -26,7 +26,7 @@ export class Shoes implements OnInit {
     this.active = c;
     this.Shoes = this.shoes.getByShoesCategory(c);
   }
-  searchItems() {
-    this.filteredItems = this.shoes.searchShoesItems(this.searchTerm);
-  }
+  // searchItems() {
+  //   this.filteredItems = this.shoes.searchShoesItems(this.searchTerm);
+  // }
 }
