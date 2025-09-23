@@ -1,3 +1,4 @@
+import { Jacket } from './components/jacket/jacket';
 import { Hoodies } from './components/hoodies/hoodies';
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
@@ -10,6 +11,13 @@ import { Acessoris } from './components/acessoris/acessoris';
 import { HoodiesDetail } from './components/hoodies-detail/hoodies-detail';
 import { Tracksuits } from './components/tracksuits/tracksuits';
 import { TracksuitsDetail } from './components/tracksuits-detail/tracksuits-detail';
+import { JacketDetail } from './components/jacket-detail/jacket-detail';
+import { Running } from './components/running/running';
+import { RunningDetail } from './components/running-detail/running-detail';
+import { Basketball } from './components/basketball/basketball';
+import { BasketballDetail } from './components/basketball-detail/basketball-detail';
+import { Lifestyle } from './components/lifestyle/lifestyle';
+import { LifestyleDatail } from './components/lifestyle-datail/lifestyle-datail';
 
 export const routes: Routes = [
   {
@@ -65,6 +73,38 @@ export const routes: Routes = [
   {
     path: 'shoes',
     component: Shoes,
+  },
+  {
+    path: 'jacket',
+    component: Jacket,
+  },
+  {
+    path: 'jacket/:id',
+    component: JacketDetail,
+  },
+  {
+    path: 'running',
+    component: Running,
+  },
+  {
+    path: 'running/:id',
+    component: RunningDetail,
+  },
+  {
+    path: 'basketball',
+    component: Basketball,
+  },
+  {
+    path: 'basketball/:id',
+    component: BasketballDetail,
+  },
+  {
+    path: 'lifestyle',
+    component: Lifestyle,
+  },
+  {
+    path: 'lifestyle/:id',
+    component: LifestyleDatail,
   },
 
   { path: '**', redirectTo: '' },

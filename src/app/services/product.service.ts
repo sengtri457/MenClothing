@@ -1,9 +1,19 @@
+import { Lifestyle } from './../components/lifestyle/lifestyle';
 import { Hoodies } from './../components/hoodies/hoodies';
-import { Accessory, Hoodie, Tracksuits } from './../models/product.model';
+import {
+  Accessory,
+  Basketballs,
+  Hoodie,
+  Jackets,
+  LifeStyles,
+  Runnings,
+  Tracksuits,
+} from './../models/product.model';
 import { HostListener, inject, Injectable, OnInit } from '@angular/core';
 import { Product, Shoes } from '../models/product.model';
 import { CartService } from './cart.service';
 import { Router } from '@angular/router';
+import { Jacket } from '../components/jacket/jacket';
 
 @Injectable({ providedIn: 'root' })
 export class ProductService implements OnInit {
@@ -401,6 +411,312 @@ export class ProductService implements OnInit {
       description: 'UV400 lenses with lightweight metal frame.',
     },
   ];
+  public Jacket: Jackets[] = [
+    {
+      id: 1,
+      name: 'Classic Black Leather Jacket',
+      category: 'Windbreakers',
+      price: 169,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      description:
+        'Premium leather jacket with modern fit and durable hardware.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+    },
+    {
+      id: 2,
+      name: 'Slim Fit White Oxford Shirt',
+      category: 'Parka Jackets',
+      price: 49,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+      description: 'Crisp oxford shirt with sharp collar — business to casual.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['White'],
+    },
+    {
+      id: 3,
+      name: 'Minimalist Sneakers',
+      category: 'Parka Jackets',
+      price: 89,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
+      description: 'Clean silhouette, cushioned insole, everyday comfort.',
+      sizes: ['40', '41', '42', '43', '44'],
+      colors: ['White', 'Black'],
+    },
+    {
+      id: 4,
+      name: 'Chelsea Boots',
+      category: 'Bomber Jackets',
+      price: 129,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
+      description: 'Suede upper, elastic side panels, classic almond toe.',
+      sizes: ['40', '41', '42', '43', '44'],
+      colors: ['Brown', 'Black'],
+    },
+    {
+      id: 5,
+      name: 'Leather Belt',
+      category: 'Bomber Jackets',
+      price: 35,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
+      description: 'Full-grain leather with brushed metal buckle.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black', 'Brown'],
+    },
+    {
+      id: 6,
+      name: 'Aviator Sunglasses',
+      category: 'Parka Jackets',
+      price: 59,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+      description: 'UV400 lenses with lightweight metal frame.',
+    },
+  ];
+  public Running: Runnings[] = [
+    {
+      id: 1,
+      name: 'Classic Black Leather Jacket',
+      category: 'Road Running',
+      price: 169,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      description:
+        'Premium leather jacket with modern fit and durable hardware.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+    },
+    {
+      id: 2,
+      name: 'Slim Fit White Oxford Shirt',
+      category: 'Trail Running',
+      price: 49,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+      description: 'Crisp oxford shirt with sharp collar — business to casual.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['White'],
+    },
+    {
+      id: 3,
+      name: 'Minimalist Sneakers',
+      category: 'Trail Running',
+      price: 89,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
+      description: 'Clean silhouette, cushioned insole, everyday comfort.',
+      sizes: ['40', '41', '42', '43', '44'],
+      colors: ['White', 'Black'],
+    },
+    {
+      id: 4,
+      name: 'Chelsea Boots',
+      category: 'Road Running',
+      price: 129,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
+      description: 'Suede upper, elastic side panels, classic almond toe.',
+      sizes: ['40', '41', '42', '43', '44'],
+      colors: ['Brown', 'Black'],
+    },
+    {
+      id: 5,
+      name: 'Leather Belt',
+      category: 'Athletics',
+      price: 35,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
+      description: 'Full-grain leather with brushed metal buckle.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black', 'Brown'],
+    },
+    {
+      id: 6,
+      name: 'Aviator Sunglasses',
+      category: 'Athletics',
+      price: 59,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+      description: 'UV400 lenses with lightweight metal frame.',
+    },
+  ];
+  public Basketball: Basketballs[] = [
+    {
+      id: 1,
+      name: 'Classic Black Leather Jacket',
+      category: 'Jordan',
+      price: 169,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      description:
+        'Premium leather jacket with modern fit and durable hardware.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+    },
+    {
+      id: 2,
+      name: 'Slim Fit White Oxford Shirt',
+      category: 'Kobe Bryant',
+      price: 49,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+      description: 'Crisp oxford shirt with sharp collar — business to casual.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['White'],
+    },
+    {
+      id: 3,
+      name: 'Minimalist Sneakers',
+      category: 'Jordan',
+      price: 89,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
+      description: 'Clean silhouette, cushioned insole, everyday comfort.',
+      sizes: ['40', '41', '42', '43', '44'],
+      colors: ['White', 'Black'],
+    },
+    {
+      id: 4,
+      name: 'Chelsea Boots',
+      category: 'LeBron James',
+      price: 129,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
+      description: 'Suede upper, elastic side panels, classic almond toe.',
+      sizes: ['40', '41', '42', '43', '44'],
+      colors: ['Brown', 'Black'],
+    },
+    {
+      id: 5,
+      name: 'Leather Belt',
+      category: 'Kobe Bryant',
+      price: 35,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
+      description: 'Full-grain leather with brushed metal buckle.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black', 'Brown'],
+    },
+    {
+      id: 6,
+      name: 'Aviator Sunglasses',
+      category: 'LeBron James',
+      price: 59,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+      description: 'UV400 lenses with lightweight metal frame.',
+    },
+  ];
+  public LifeStyle: LifeStyles[] = [
+    {
+      id: 1,
+      name: 'Classic Black Leather Jacket',
+      category: 'Nike Dunk',
+      price: 169,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
+      description:
+        'Premium leather jacket with modern fit and durable hardware.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
+    },
+    {
+      id: 2,
+      name: 'Slim Fit White Oxford Shirt',
+      category: 'Air Force',
+      price: 49,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+      description: 'Crisp oxford shirt with sharp collar — business to casual.',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['White'],
+    },
+    {
+      id: 3,
+      name: 'Minimalist Sneakers',
+      category: 'Jordan',
+      price: 89,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
+      description: 'Clean silhouette, cushioned insole, everyday comfort.',
+
+      sizes: ['40', '41', '42', '43', '44'],
+      colors: ['White', 'Black'],
+    },
+    {
+      id: 4,
+      name: 'Chelsea Boots',
+      category: 'Jordan',
+      price: 129,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
+      description: 'Suede upper, elastic side panels, classic almond toe.',
+      sizes: ['40', '41', '42', '43', '44'],
+      colors: ['Brown', 'Black'],
+    },
+    {
+      id: 5,
+      name: 'Leather Belt',
+      category: 'Air Force',
+      price: 35,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
+      description: 'Full-grain leather with brushed metal buckle.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black', 'Brown'],
+    },
+    {
+      id: 6,
+      name: 'Aviator Sunglasses',
+      category: 'Jordan',
+      price: 59,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
+      description: 'UV400 lenses with lightweight metal frame.',
+    },
+  ];
 
   ngOnInit(): void {}
   router = inject(Router);
@@ -431,6 +747,15 @@ export class ProductService implements OnInit {
   getAllAccessories() {
     return this.Accessories;
   }
+  getAllRunning() {
+    return this.Running;
+  }
+  getAllJacket() {
+    return this.Jacket;
+  }
+  getAllLifeStyle() {
+    return this.LifeStyle;
+  }
   getTotal() {
     return this.Items.items.reduce(
       (sum, i) => sum + i.product.price * i.qty,
@@ -458,6 +783,9 @@ export class ProductService implements OnInit {
   getAllShoes() {
     return this.shoes;
   }
+  getAllBasketball() {
+    return this.Basketball;
+  }
   getCategories() {
     return [...new Set(this.items.map((i) => i.category))];
   }
@@ -469,6 +797,18 @@ export class ProductService implements OnInit {
   }
   getTracksuitCategory() {
     return [...new Set(this.Tracksuit.map((i) => i.category))];
+  }
+  getJacketCategory() {
+    return [...new Set(this.Jacket.map((i) => i.category))];
+  }
+  getRunningCategory() {
+    return [...new Set(this.Running.map((i) => i.category))];
+  }
+  getBasketballCategory() {
+    return [...new Set(this.Basketball.map((i) => i.category))];
+  }
+  getLifeStyleCategory() {
+    return [...new Set(this.LifeStyle.map((i) => i.category))];
   }
   getById(id: number) {
     return this.items.find((p) => p.id === id);
@@ -488,10 +828,42 @@ export class ProductService implements OnInit {
   getByAcId(id: number) {
     return this.Accessories.find((ac) => ac.id === id);
   }
+  getJacketById(id: number) {
+    return this.Jacket.find((p) => p.id === id);
+  }
+  getRunningById(id: number) {
+    return this.Running.find((p) => p.id === id);
+  }
+  getLifeStyleById(id: number) {
+    return this.LifeStyle.find((p) => p.id === id);
+  }
+  getRunningByCategory(c: string) {
+    return c === 'All'
+      ? this.Running
+      : this.Running.filter((p) => p.category === c);
+  }
+  getLifeStyleByCategory(c: string) {
+    return c === 'All'
+      ? this.LifeStyle
+      : this.LifeStyle.filter((p) => p.category === c);
+  }
+  getBasketballById(id: number) {
+    return this.Basketball.find((p) => p.id === id);
+  }
+  getBasketballByCategory(c: string) {
+    return c === 'All'
+      ? this.Basketball
+      : this.Basketball.filter((p) => p.category === c);
+  }
   getByCategory(c: string) {
     return c === 'All'
       ? this.items
       : this.items.filter((p) => p.category === c);
+  }
+  getJacketByCategory(c: string) {
+    return c === 'All'
+      ? this.Jacket
+      : this.Jacket.filter((p) => p.category === c);
   }
   getByShoesCategory(c: string) {
     return c === 'All'
