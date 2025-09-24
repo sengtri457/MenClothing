@@ -21,10 +21,20 @@ export class RunningDetail {
     debugger;
     this.running = this.ps.getRunningById(id);
   }
+  currentIndex: number = 0;
+
+  setActiveImage(index: number) {
+    this.currentIndex = index;
+  }
   addShoesToCart() {
     if (this.running) {
       this.cart.add(this.running, this.qty, this.selectedSize);
     }
     alert('Added to cart!');
+  }
+  addFavorite() {
+    if (this.running) {
+      this.cart.addToFavorite(this.running, this.qty, this.selectedSize);
+    }
   }
 }

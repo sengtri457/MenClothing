@@ -21,10 +21,20 @@ export class HoodiesDetail {
     debugger;
     this.hoodie = this.ps.getByHoodieId(id);
   }
+  currentIndex: number = 0;
+
+  setActiveImage(index: number) {
+    this.currentIndex = index;
+  }
   addShoesToCart() {
     if (this.hoodie) {
       this.cart.add(this.hoodie, this.qty, this.selectedSize);
     }
     alert('Added to cart!');
+  }
+  addFavorite() {
+    if (this.hoodie) {
+      this.cart.addToFavorite(this.hoodie, this.qty, this.selectedSize);
+    }
   }
 }

@@ -21,10 +21,20 @@ export class TracksuitsDetail {
     debugger;
     this.track = this.ps.getByTracksuitId(id);
   }
+  currentIndex: number = 0;
+
+  setActiveImage(index: number) {
+    this.currentIndex = index;
+  }
   addTrackToCart() {
     if (this.track) {
       this.cart.add(this.track, this.qty, this.selectedSize);
     }
     alert('Added to cart!');
+  }
+  addFavorite() {
+    if (this.track) {
+      this.cart.addToFavorite(this.track, this.qty, this.selectedSize);
+    }
   }
 }

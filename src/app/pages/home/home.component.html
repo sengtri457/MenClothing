@@ -41,7 +41,7 @@
         </div>
         <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s"
           style="visibility: visible; animation-delay: 0.1s; animation-name: slideInLeft;">
-          <div class="timeline-date" routerLink="/men">Clothing</div>
+          <div class="timeline-date"><a class="nav-link" routerLink="/clothing">Clothing</a></div>
           <div class="timeline-text aos-init aos-animate" data-aos="fade-up"
             style="background-color: transparent;box-shadow: none;">
             <div class="content-vision">
@@ -66,7 +66,8 @@
         </div>
         <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s"
           style="visibility: visible; animation-delay: 0.1s; animation-name: slideInLeft;">
-          <div class="timeline-date" routerLink="/shoes">Shoes</div>
+          <div class="timeline-date"><a class="nav-link" routerLink="/shoes">Shoes</a></div>
+
           <div class="timeline-text aos-init aos-animate" data-aos="fade-up"
             style="background-color: transparent;box-shadow: none;">
             <div class="content-vision">
@@ -90,17 +91,18 @@
         </div>
         <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s"
           style="visibility: visible; animation-delay: 0.1s; animation-name: slideInLeft;">
-          <div class="timeline-date" routerLink="/Accessory">Acessories</div>
+          <div class="timeline-date"><a class="nav-link" routerLink="/Accessory">Accessories</a></div>
+
           <div class="timeline-text aos-init aos-animate" data-aos="fade-up"
             style="background-color: transparent;box-shadow: none;">
             <div class="content-vision">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Hat</a>
+                  <a class="nav-link active" aria-current="page" routerLink="/hat">Hat</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Bag</a>
-                  <a class="nav-link" href="#">Totebag</a>
+                  <a class="nav-link" routerLink="/bag">Backpacks & Bags</a>
+                  <a class="nav-link" routerLink="/sock">Socks</a>
                 </li>
               </ul>
             </div>
@@ -108,8 +110,8 @@
         </div>
       </div>
       <div class="d-flex gap-2 mt-5">
-        <a href="#new" class="btn btn-dark rounded-pill px-4">Shop new</a>
-        <a href="#best" class="btn btn-outline-dark rounded-pill px-4">Best sellers</a>
+        <a routerLink="/men" class="btn btn-dark rounded-pill px-4">Shop new</a>
+        <a routerLink="/shoes" class="btn btn-outline-dark rounded-pill px-4">Best sellers</a>
 
       </div>
     </div>
@@ -144,11 +146,11 @@
     <div class="wrapper-text">
       <h2 class="text-uppercase">Up to 50% Off is here</h2>
       <p>Save on thousands of styles this holiday weekend.</p>
-      <button class="btn btn-light rounded-pill px-4">New Arrive</button>
+      <button class="btn btn-light rounded-pill px-4" routerLink="/clothing">Clothing</button>
       &nbsp;
-      <button class="btn btn-light rounded-pill px-4">Best Selling</button>
+      <button class="btn btn-light rounded-pill px-4" routerLink="/shoes">Shoes</button>
       &nbsp;
-      <button class="btn btn-light rounded-pill px-4">Buget</button>
+      <button class="btn btn-light rounded-pill px-4" routerLink="/Accessory">Accessory</button>
     </div>
   </div>
 
@@ -170,7 +172,8 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum unde laboriosam
             quam vitae. Assumenda illo alias cumque explicabo! Recusandae, excepturi.
           </p>
-          <button class="btn btn-danger rounded-pill px-4">New Arrive</button>
+          <button class="btn btn-danger rounded-pill px-4"><a class="nav-link" routerLink="/clothings">New
+              Arrive</a></button>
 
         </div>
         <div class="timeline-text aos-init aos-animate" data-aos="fade-up"
@@ -200,7 +203,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum unde laboriosam
             quam vitae. Assumenda illo alias cumque explicabo! Recusandae, excepturi.
           </p>
-          <button class="btn btn-danger rounded-pill px-4">New Arrive</button>
+          <button class="btn btn-danger rounded-pill px-4" routerLink="/shoes">New Arrive</button>
 
         </div>
         <div class="timeline-text aos-init aos-animate" data-aos="fade-up"
@@ -230,7 +233,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum unde laboriosam
             quam vitae. Assumenda illo alias cumque explicabo! Recusandae, excepturi.
           </p>
-          <button class="btn btn-danger rounded-pill px-4">New Arrive</button>
+          <button class="btn btn-danger rounded-pill px-4" routerLink="/Accessory">New Arrive</button>
 
         </div>
         <div class="timeline-text aos-init aos-animate" data-aos="fade-up"
@@ -249,11 +252,37 @@
     </div>
   </div>
 </section>
-<section class="container">
+<section class="container" id="new">
   <div class="row g-4">
-    <h2>New Arrive</h2>
+    <div class="promo rounded-4 py-4 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div>
+        <h5 class="mb-1" id="clothing">Clothing</h5>
+        <p class="mb-0 text-secondary small">On orders over $100. Easy 30-day returns.</p>
+      </div>
+      <a class="btn btn-dark rounded-pill px-4" routerLink="/clothing">Explore Clothing</a>
+    </div>
     <div class="col-6 col-md-4 col-lg-3" *ngFor="let p of newArrive">
       <app-product-card [product]="p"></app-product-card>
+    </div>
+    <div class="promo rounded-4 py-4 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div>
+        <h5 class="mb-1">Shoes</h5>
+        <p class="mb-0 text-secondary small">On orders over $100. Easy 30-day returns.</p>
+      </div>
+      <a class="btn btn-dark rounded-pill px-4" routerLink="/shoes">Explore Shoes</a>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3" *ngFor="let p of shoes">
+      <app-shoescard [shoes]="p"></app-shoescard>
+    </div>
+    <div class="promo rounded-4 py-4 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div>
+        <h5 class="mb-1">Accessories</h5>
+        <p class="mb-0 text-secondary small">On orders over $100. Easy 30-day returns.</p>
+      </div>
+      <a class="btn btn-dark rounded-pill px-4" routerLink="/Accessory">Explore accessories</a>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3" *ngFor="let p of ac">
+      <app-acessoriescard [Accessory]="p"></app-acessoriescard>
     </div>
   </div>
 </section>
@@ -280,7 +309,7 @@
       <h5 class="mb-1">Free shipping</h5>
       <p class="mb-0 text-secondary small">On orders over $100. Easy 30-day returns.</p>
     </div>
-    <a class="btn btn-dark rounded-pill px-4" href="#">Explore accessories</a>
+    <a class="btn btn-dark rounded-pill px-4" routerLink="/shoes">Explore accessories</a>
   </div>
 </section>
 <section>

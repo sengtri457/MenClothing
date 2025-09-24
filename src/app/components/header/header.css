@@ -161,3 +161,25 @@
     background-color: #000;
     color: #fff;
 }
+
+.favorite-offcanvas {
+    width: 380px;
+    background: #fff;
+    border-left: 2px solid #000;
+}
+
+.favorite-item {
+    background: #fdfdfd;
+    transition: transform 0.2s ease;
+}
+
+.favorite-item:hover {
+    transform: scale(1.02);
+}
+
+/* Thumbnail */
+.favorite-thumb {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+}

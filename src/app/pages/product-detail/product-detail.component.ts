@@ -27,11 +27,20 @@ export class ProductDetailComponent {
     this.product = this.ps.getById(id);
     this.shoes = this.ps.getByShoesId(id);
   }
+  currentIndex: number = 0;
 
+  setActiveImage(index: number) {
+    this.currentIndex = index;
+  }
   addToCart() {
     if (this.product) {
       this.cart.add(this.product, this.qty, this.selectedSize);
     }
     alert('Added to cart!');
+  }
+  addFavorite() {
+    if (this.product) {
+      this.cart.addToFavorite(this.product, this.qty, this.selectedSize);
+    }
   }
 }

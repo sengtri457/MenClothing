@@ -1,8 +1,29 @@
 <div class="container py-4" *ngIf="running">
     <div class="row g-4">
-        <div class="col-md-6">
-            <img [src]="running.image" [alt]="running.name" class="w-100 rounded-3 shadow-sm object-fit-cover"
-                style="height: 480px;">
+        <!-- Left Column: Image Slider -->
+        <div class="col-md-6 d-flex flex-column align-items-center">
+            <!-- Main Image -->
+            <div class="main-image-wrapper position-relative">
+                <img [src]="running.listImage[currentIndex]" [alt]="running.name"
+                    class="w-100 rounded-3 shadow-sm object-fit-cover rounded-3 shadow-sm">
+
+                <!-- Navigation Arrows -->
+                <button class="nav-btn left"
+                    (click)="currentIndex = (currentIndex - 1 + running.listImage.length) % running.listImage.length">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="nav-btn right" (click)="currentIndex = (currentIndex + 1) % running.listImage.length">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Thumbnail List -->
+            <div class="thumb-row d-flex justify-content-center gap-3 mt-3">
+                <div *ngFor="let item of running.listImage; let i = index" class="thumb-wrapper"
+                    [class.active]="i === currentIndex" (click)="setActiveImage(i)">
+                    <img [src]="item" [alt]="running.name" class="thumb-img rounded-2 shadow-sm">
+                </div>
+            </div>
         </div>
         <div class="col-md-6">
             <a routerLink="/running" class="small text-decoration-none text-secondary">← Back</a>
@@ -29,9 +50,23 @@
             <div class="input-group mb-3" style="max-width: 220px;">
                 <span class="input-group-text">Qty</span>
                 <input type="number" class="form-control" min="1" [(ngModel)]="qty">
-                <button class="btn btn-dark" (click)="addShoesToCart()" data-bs-toggle="offcanvas"
-                    data-bs-target="#cartDetail">Add to cart</button>
             </div>
+            @if(selectedSize != null) {
+            <div class="row">
+                <div class="col-auto pe-0">
+
+                    <button class="btn btn-dark" (click)="addShoesToCart()" data-bs-toggle="offcanvas"
+                        data-bs-target="#cartDetail">Add to cart</button>
+                </div>
+                <div class="col-8">
+
+                    <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#favoriteDetail"
+                        (click)="addFavorite()">❤️Add Favorite</button>
+                </div>
+            </div>
+            }@else {
+            <p class="text-danger">Please Select Size Before You Order!!</p>
+            }
         </div>
     </div>
 </div>

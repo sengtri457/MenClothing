@@ -25,6 +25,12 @@ export class ProductService implements OnInit {
       price: 169,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      listImage: [
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ebd2ae10-8b61-4b88-b60b-6decbbb3a8b1/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/16e072ed-f40d-4e43-9e7d-a7686fadfebb/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b181afad-e90c-4058-914b-8ff17aed9f89/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
+
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -36,7 +42,12 @@ export class ProductService implements OnInit {
       category: 'Long Sleeve Shirts',
       price: 49,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9f0554d6-fca0-4590-9822-74d4cde5ca24/U+NSW+TEE+M90+OC+REMIX.png',
+      listImage: [
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f47de7ec-8e6c-4426-84f0-bdbacfe3be47/U+NSW+TEE+M90+OC+REMIX.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cc19d045-c340-490c-adc4-6d73f7234ce6/U+NSW+TEE+M90+OC+REMIX.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bff07af3-8f97-4bd7-b2bb-bcbe2aa28d79/U+NSW+TEE+M90+OC+REMIX.png',
+      ],
       description: 'Crisp oxford shirt with sharp collar — business to casual.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['White'],
@@ -47,7 +58,12 @@ export class ProductService implements OnInit {
       category: 'Short Sleeve Shirts',
       price: 89,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ad1c4733-874e-4eda-af5d-1953335e4ec1/M+NK+TEE+M90+PAINT.png',
+      listImage: [
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/af94fb6b-932e-4558-83a2-b00245b31681/M+NK+TEE+M90+PAINT.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6d89a771-350b-4937-a499-3767a1c2cc5a/M+NK+TEE+M90+PAINT.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5f2ac174-1e0e-4929-a6bc-9d54e62eaabf/M+NK+TEE+M90+PAINT.png',
+      ],
       description: 'Clean silhouette, cushioned insole, everyday comfort.',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['White', 'Black'],
@@ -58,7 +74,12 @@ export class ProductService implements OnInit {
       category: 'Short Sleeve Shirts',
       price: 129,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8512983d-d3c1-4821-90f0-d65e89f14cbb/M+NSW+TN+TEE.png',
+      listImage: [
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8512983d-d3c1-4821-90f0-d65e89f14cbb/M+NSW+TN+TEE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2161fd56-1353-4325-98b0-2e23ed37d927/M+NSW+TN+TEE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8c0b0b3f-be8d-4541-b381-cf9a680012ca/M+NSW+TN+TEE.png',
+      ],
       description: 'Suede upper, elastic side panels, classic almond toe.',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['Brown', 'Black'],
@@ -69,29 +90,72 @@ export class ProductService implements OnInit {
       category: 'Long Sleeve Shirts',
       price: 35,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/479eb26c-95b8-4165-82d8-de9ba0d1edbd/U+NSW+TEE+M90+OC+PCKT+VNTG.png',
+      listImage: [
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b175ec2f-2bdf-4f8e-8bb6-6293f63d765c/U+NSW+TEE+M90+OC+PCKT+VNTG.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/50a36cac-f348-4f09-b391-4e9f698034f4/U+NSW+TEE+M90+OC+PCKT+VNTG.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/28ddf3ba-71cf-4f21-8c4d-9f4f85a82f5c/U+NSW+TEE+M90+OC+PCKT+VNTG.png',
+      ],
       description: 'Full-grain leather with brushed metal buckle.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black', 'Brown'],
     },
     {
       id: 6,
-      name: 'Aviator Sunglasses',
+      name: 'Nike',
       category: 'Graphic T-Shirts',
       price: 59,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5e14aa88-63c9-4d33-96d8-6092f6ea2898/M+NK+TEE+M90+NAOS.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5e14aa88-63c9-4d33-96d8-6092f6ea2898/M+NK+TEE+M90+NAOS.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/22805380-5ac9-4ff9-abef-4e940b51dba3/M+NK+TEE+M90+NAOS.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e664c46-d22e-4682-b506-eacd32e87d73/M+NK+TEE+M90+NAOS.png',
+      ],
+      description: 'UV400 lenses with lightweight metal frame.',
+    },
+    {
+      id: 7,
+      name: 'F.C. Barcelona',
+      category: 'Graphic T-Shirts',
+      price: 59,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b6828b1d-28e0-4b9f-a9c3-1b27ecea3eb7/FCB+M+NK+T90+WRDMARK+TEE.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b6828b1d-28e0-4b9f-a9c3-1b27ecea3eb7/FCB+M+NK+T90+WRDMARK+TEE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/475e275f-3ee3-4725-a9f9-bfad1d0ad980/FCB+M+NK+T90+WRDMARK+TEE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2eec7c0e-60c9-4750-a680-e51770bc0e47/FCB+M+NK+T90+WRDMARK+TEE.png',
+      ],
+      description: 'UV400 lenses with lightweight metal frame.',
+    },
+    {
+      id: 8,
+      name: 'Nike Sportswear',
+      category: 'Graphic T-Shirts',
+      price: 59,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c9b939e4-24b8-4794-8fc0-e299611184a7/U+NSW+TEE+OC+OPEN.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c9b939e4-24b8-4794-8fc0-e299611184a7/U+NSW+TEE+OC+OPEN.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d22bbdf3-c4ce-46c6-bd09-502209921a4e/U+NSW+TEE+OC+OPEN.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4e98edce-9095-4445-9d91-8d7ed3a37481/U+NSW+TEE+OC+OPEN.png',
+      ],
       description: 'UV400 lenses with lightweight metal frame.',
     },
   ];
   public shoes: Shoes[] = [
     {
       id: 1,
-      name: 'Classic Black Leather Jacket',
+      name: 'Classic Kobes',
       category: 'Basketball',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/89a0437e-bd82-488b-8f36-ec218e44257f/AIR+JORDAN+5+RETRO+OG.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9e4810d6-f090-4afc-862d-775c3b06821f/LEBRON+XXIII+PVD.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9e4810d6-f090-4afc-862d-775c3b06821f/LEBRON+XXIII+PVD.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/208ab1ad-c8c8-4ec1-a06a-67d5cfb6fcfb/LEBRON+XXIII+PVD.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1706cd36-2cba-471f-80e0-70e37ab6142e/LEBRON+XXIII+PVD.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -99,11 +163,16 @@ export class ProductService implements OnInit {
     },
     {
       id: 2,
-      name: 'Classic Black ',
+      name: 'Chunky Form',
       category: 'Lifestyle',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a5cb8cc0-adff-444e-a945-8ab9107b690b/JORDAN+SPIZIKE+LOW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/lkwfba88t6qix4qxaavi/NIKE+ZOOM+VOMERO+5.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/lkwfba88t6qix4qxaavi/NIKE+ZOOM+VOMERO+5.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/sqj9b8gqy0mofneog6cx/NIKE+ZOOM+VOMERO+5.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/l0svab1ihb4o5dl7anuq/NIKE+ZOOM+VOMERO+5.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -111,11 +180,16 @@ export class ProductService implements OnInit {
     },
     {
       id: 3,
-      name: 'Classic Black ',
+      name: 'Runner Men ',
       category: 'Running',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a5cb8cc0-adff-444e-a945-8ab9107b690b/JORDAN+SPIZIKE+LOW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6c9bee45-9b41-4b38-997a-1c056e2797db/NIKE+VOMERO+PREMIUM.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6c9bee45-9b41-4b38-997a-1c056e2797db/NIKE+VOMERO+PREMIUM.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/035e0c19-df56-41e2-98ad-f8cec7a59021/NIKE+VOMERO+PREMIUM.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa550a34-ea36-4003-a9cf-d1db1e0eb36c/NIKE+VOMERO+PREMIUM.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -123,11 +197,16 @@ export class ProductService implements OnInit {
     },
     {
       id: 4,
-      name: 'Classic Black ',
+      name: 'PGO',
       category: 'Jordan',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a5cb8cc0-adff-444e-a945-8ab9107b690b/JORDAN+SPIZIKE+LOW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b2d79ceb-04f2-4a4b-a5d1-90265f6c2db8/PG+4.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b2d79ceb-04f2-4a4b-a5d1-90265f6c2db8/PG+4.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1f6c8f34-d09c-4634-86ce-40d03619f7f2/PG+4.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c6c723f1-8f90-477e-8b7a-ba5b58f11efd/PG+4.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -141,7 +220,12 @@ export class ProductService implements OnInit {
       category: 'Bags',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/89a0437e-bd82-488b-8f36-ec218e44257f/AIR+JORDAN+5+RETRO+OG.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5eb94fdc-b3df-4574-b8d1-b2a8670c6add/NK+AURA+CROSSBODY.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5eb94fdc-b3df-4574-b8d1-b2a8670c6add/NK+AURA+CROSSBODY.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bb31ab38-4b49-4ee0-b887-9d3bc4952c94/NK+AURA+CROSSBODY.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/12ef76eb-c70b-4a5b-aaf2-781754a7c1f8/NK+AURA+CROSSBODY.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -153,7 +237,11 @@ export class ProductService implements OnInit {
       category: 'Hats',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a5cb8cc0-adff-444e-a945-8ab9107b690b/JORDAN+SPIZIKE+LOW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fe099117-1cbc-4730-8f8b-fad780e208a5/U+NK+CLUB+CAP+U+CB+JDI+L.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fe099117-1cbc-4730-8f8b-fad780e208a5/U+NK+CLUB+CAP+U+CB+JDI+L.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f512fae1-410a-42d1-b638-aa9d45882610/U+NK+CLUB+CAP+U+CB+JDI+L.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -165,7 +253,11 @@ export class ProductService implements OnInit {
       category: 'Accessories',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a5cb8cc0-adff-444e-a945-8ab9107b690b/JORDAN+SPIZIKE+LOW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d7dfjqsntrtf13clribk/NIKE+LEAN+ARM+BAND+PLUS.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d7dfjqsntrtf13clribk/NIKE+LEAN+ARM+BAND+PLUS.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bdaf1b8b-cd03-406c-8115-5e25b222e8fe/NIKE+LEAN+ARM+BAND+PLUS.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -177,7 +269,12 @@ export class ProductService implements OnInit {
       category: 'Socks',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a5cb8cc0-adff-444e-a945-8ab9107b690b/JORDAN+SPIZIKE+LOW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cee7ae7f-fd02-4ff2-956d-81f67d59614f/U+NK+ED+CSH+PLY+CRW+3P-144+T90.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cee7ae7f-fd02-4ff2-956d-81f67d59614f/U+NK+ED+CSH+PLY+CRW+3P-144+T90.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/69b0f149-19a1-4dd0-a975-e539a6c0d1dc/U+NK+ED+CSH+PLY+CRW+3P-144+T90.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d851ebf-03d2-4f0e-b377-1295c878d356/U+NK+ED+CSH+PLY+CRW+3P-144+T90.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -246,7 +343,7 @@ export class ProductService implements OnInit {
       category: 'Graphic T-Shirts',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f47de7ec-8e6c-4426-84f0-bdbacfe3be47/U+NSW+TEE+M90+OC+REMIX.png',
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -258,7 +355,7 @@ export class ProductService implements OnInit {
       category: 'Graphic T-Shirts',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/af94fb6b-932e-4558-83a2-b00245b31681/M+NK+TEE+M90+PAINT.png',
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -270,7 +367,7 @@ export class ProductService implements OnInit {
       category: 'Graphic T-Shirts',
       price: 169,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8512983d-d3c1-4821-90f0-d65e89f14cbb/M+NSW+TN+TEE.png',
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -285,6 +382,11 @@ export class ProductService implements OnInit {
       price: 169,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -352,6 +454,11 @@ export class ProductService implements OnInit {
       price: 169,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -419,6 +526,11 @@ export class ProductService implements OnInit {
       price: 169,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -486,6 +598,11 @@ export class ProductService implements OnInit {
       price: 169,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -553,6 +670,11 @@ export class ProductService implements OnInit {
       price: 169,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
       description:
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
@@ -810,6 +932,12 @@ export class ProductService implements OnInit {
   getLifeStyleCategory() {
     return [...new Set(this.LifeStyle.map((i) => i.category))];
   }
+  getAcCategory() {
+    return [...new Set(this.Accessories.map((i) => i.category))];
+  }
+  getAcById(id: number) {
+    return this.Accessories.find((p) => p.id === id);
+  }
   getById(id: number) {
     return this.items.find((p) => p.id === id);
   }
@@ -841,6 +969,11 @@ export class ProductService implements OnInit {
     return c === 'All'
       ? this.Running
       : this.Running.filter((p) => p.category === c);
+  }
+  getAcByCategory(c: string) {
+    return c === 'All'
+      ? this.Accessories
+      : this.Accessories.filter((p) => p.category === c);
   }
   getLifeStyleByCategory(c: string) {
     return c === 'All'

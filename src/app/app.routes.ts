@@ -18,6 +18,14 @@ import { Basketball } from './components/basketball/basketball';
 import { BasketballDetail } from './components/basketball-detail/basketball-detail';
 import { Lifestyle } from './components/lifestyle/lifestyle';
 import { LifestyleDatail } from './components/lifestyle-datail/lifestyle-datail';
+import { HatDetail } from './components/hat-detail/hat-detail';
+import { Hat } from './components/hat/hat';
+import { Bag } from './components/bag/bag';
+import { BagDatail } from './components/bag-datail/bag-datail';
+import { Sock } from './components/sock/sock';
+import { SockDetail } from './components/sock-detail/sock-detail';
+import { Clothing } from './Main/clothing/clothing';
+import { ClothingDetail } from './Main/clothing-detail/clothing-detail';
 
 export const routes: Routes = [
   {
@@ -105,6 +113,38 @@ export const routes: Routes = [
   {
     path: 'lifestyle/:id',
     component: LifestyleDatail,
+  },
+  {
+    path: 'hat',
+    component: Hat,
+  },
+  {
+    path: 'hat/:id',
+    component: HatDetail,
+  },
+  {
+    path: 'bag',
+    component: Bag,
+  },
+  {
+    path: 'bag/:id',
+    component: BagDatail,
+  },
+  {
+    path: 'sock',
+    component: Sock,
+  },
+  {
+    path: 'sock/:id',
+    component: SockDetail,
+  },
+  {
+    path: 'clothing',
+    component: Clothing,
+  },
+  {
+    path: 'clothing/:id',
+    component: ClothingDetail,
   },
 
   { path: '**', redirectTo: '' },

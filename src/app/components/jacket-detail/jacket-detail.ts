@@ -21,10 +21,20 @@ export class JacketDetail {
     debugger;
     this.jacket = this.ps.getByHoodieId(id);
   }
+  currentIndex: number = 0;
+
+  setActiveImage(index: number) {
+    this.currentIndex = index;
+  }
   addShoesToCart() {
     if (this.jacket) {
       this.cart.add(this.jacket, this.qty, this.selectedSize);
     }
     alert('Added to cart!');
+  }
+  addFavorite() {
+    if (this.jacket) {
+      this.cart.addToFavorite(this.jacket, this.qty, this.selectedSize);
+    }
   }
 }

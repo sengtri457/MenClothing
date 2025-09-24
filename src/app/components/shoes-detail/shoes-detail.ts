@@ -21,10 +21,20 @@ export class ShoesDetail {
     debugger;
     this.shoes = this.ps.getByShoesId(id);
   }
+  currentIndex: number = 0;
+
+  setActiveImage(index: number) {
+    this.currentIndex = index;
+  }
   addShoesToCart() {
     if (this.shoes) {
       this.cart.add(this.shoes, this.qty, this.selectedSize);
     }
     alert('Added to cart!');
+  }
+  addFavorite() {
+    if (this.shoes) {
+      this.cart.addToFavorite(this.shoes, this.qty, this.selectedSize);
+    }
   }
 }

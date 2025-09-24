@@ -1,0 +1,168 @@
+<div class="container py-4" *ngIf="bag">
+    <div class="row g-4">
+        <!-- Left Column: Image Slider -->
+        <div class="col-md-6 d-flex flex-column align-items-center">
+            <!-- Main Image -->
+            <div class="main-image-wrapper position-relative">
+                <img [src]="bag.listImage[currentIndex]" [alt]="bag.name"
+                    class="w-100 rounded-3 shadow-sm object-fit-cover rounded-3 shadow-sm">
+
+                <!-- Navigation Arrows -->
+                <button class="nav-btn left"
+                    (click)="currentIndex = (currentIndex - 1 + bag.listImage.length) % bag.listImage.length">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="nav-btn right" (click)="currentIndex = (currentIndex + 1) % bag.listImage.length">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Thumbnail List -->
+            <div class="thumb-row d-flex justify-content-center gap-3 mt-3">
+                <div *ngFor="let item of bag.listImage; let i = index" class="thumb-wrapper"
+                    [class.active]="i === currentIndex" (click)="setActiveImage(i)">
+                    <img [src]="item" [alt]="bag.name" class="thumb-img rounded-2 shadow-sm">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Details -->
+        <div class="col-md-6">
+            <a routerLink="/bag" class="small text-decoration-none text-secondary">← Back</a>
+            <h2 class="mt-2">{{ bag.name }}</h2>
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge text-bg-dark rounded-pill">${{ bag.price }}</span>
+                <span class="text-secondary small">{{ bag.category }}</span>
+            </div>
+            <p class="text-secondary">{{ bag.description }}</p>
+
+            <!-- Sizes -->
+            <div class="row g-2 mb-3" *ngIf="bag.sizes?.length">
+                <div class="col-12"><small class="fw-semibold">Size</small></div>
+                <div class="col-auto" *ngFor="let item of bag.sizes">
+                    <button class="btn btn-sm btn-outline-dark rounded-pill px-3"
+                        (click)="selectedSize = item; bag.size = item"
+                        [class.btn-dark]="selectedSize === item">{{ item }}
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quantity & Cart -->
+            <div class="input-group mb-3" style="max-width: 250px;">
+                <span class="input-group-text">Qty</span>
+                <input type="number" class="form-control" min="1" [(ngModel)]="qty">
+            </div>
+            @if(selectedSize != null) {
+            <div class="row">
+                <div class="col-auto pe-0">
+
+                    <button class="btn btn-dark" (click)="addbagToCart()" data-bs-toggle="offcanvas"
+                        data-bs-target="#cartDetail">Add to cart</button>
+                </div>
+                <div class="col-8">
+
+                    <button class="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#favoriteDetail"
+                        (click)="addFavorite()">❤️Add Favorite</button>
+                </div>
+            </div>
+            }@else {
+            <p class="text-danger">Please Select Size Before You Order!!</p>
+            }
+            <!-- Product Information Section -->
+            @if (bag.details) {
+            <div class="product-info mt-5">
+                <h4 class="fw-bold mb-3">Product Information</h4>
+
+                <div class="info-card p-3 rounded-3 shadow-sm mb-3" *ngIf="bag.details">
+                    <div class="accordion" id="productInfoAccordion">
+
+                        <!-- Material -->
+                        <div class="accordion-item border-0 mb-2">
+                            <h2 class="accordion-header" id="headingMaterial">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseMaterial">
+                                    🧵 Material
+                                </button>
+                            </h2>
+                            <div id="collapseMaterial" class="accordion-collapse collapse"
+                                data-bs-parent="#productInfoAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {{ bag.details.material }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fit -->
+                        <div class="accordion-item border-0 mb-2">
+                            <h2 class="accordion-header" id="headingFit">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFit">
+                                    👕 Fit
+                                </button>
+                            </h2>
+                            <div id="collapseFit" class="accordion-collapse collapse"
+                                data-bs-parent="#productInfoAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {{ bag.details.fit }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Care -->
+                        <div class="accordion-item border-0 mb-2">
+                            <h2 class="accordion-header" id="headingCare">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCare">
+                                    🧼 Care Instructions
+                                </button>
+                            </h2>
+                            <div id="collapseCare" class="accordion-collapse collapse"
+                                data-bs-parent="#productInfoAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {{ bag.details.care }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Origin -->
+                        <div class="accordion-item border-0 mb-2">
+                            <h2 class="accordion-header" id="headingOrigin">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOrigin">
+                                    🌍 Country of Origin
+                                </button>
+                            </h2>
+                            <div id="collapseOrigin" class="accordion-collapse collapse"
+                                data-bs-parent="#productInfoAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {{ bag.details.origin }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Warranty -->
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingWarranty">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWarranty">
+                                    🛡️ Warranty
+                                </button>
+                            </h2>
+                            <div id="collapseWarranty" class="accordion-collapse collapse"
+                                data-bs-parent="#productInfoAccordion">
+                                <div class="accordion-body text-secondary">
+                                    {{ bag.details.warranty }}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            }@else {
+            <div class="alert alert-warning" role="alert"> No additional product information available.</div>
+            }
+
+        </div>
+    </div>
+</div>

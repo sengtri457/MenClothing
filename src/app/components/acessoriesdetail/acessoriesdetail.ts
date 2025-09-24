@@ -21,10 +21,20 @@ export class Acessoriesdetail {
     debugger;
     this.acc = this.ps.getByAcId(id);
   }
+  currentIndex: number = 0;
+
+  setActiveImage(index: number) {
+    this.currentIndex = index;
+  }
   addShoesToCart() {
     if (this.acc) {
       this.cart.add(this.acc, this.qty, this.selectedSize);
     }
     alert('Added to cart!');
+  }
+  addFavorite() {
+    if (this.acc) {
+      this.cart.addToFavorite(this.acc, this.qty, this.selectedSize);
+    }
   }
 }

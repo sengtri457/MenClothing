@@ -33,4 +33,9 @@ export class LifestyleDatail {
     }
     alert('Added to cart!');
   }
+  addFavorite() {
+    if (this.lifestyle) {
+      this.cart.addToFavorite(this.lifestyle, this.qty, this.selectedSize);
+    }
+  }
 }

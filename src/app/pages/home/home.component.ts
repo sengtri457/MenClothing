@@ -6,6 +6,8 @@ import { ProductCardComponent } from '../../components/product-card/product-card
 import { GridLayout } from '../../components/grid-layout/grid-layout';
 import { Info } from '../../components/info/info';
 import { RouterLink } from '@angular/router';
+import { Shoescard } from '../../components/shoescard/shoescard';
+import { Acessoriescard } from '../../components/acessoriescard/acessoriescard';
 
 @Component({
   standalone: true,
@@ -17,6 +19,8 @@ import { RouterLink } from '@angular/router';
     GridLayout,
     Info,
     RouterLink,
+    Shoescard,
+    Acessoriescard,
   ],
   templateUrl: './home.component.html',
   styleUrl: './homepage.css',
@@ -26,6 +30,8 @@ export class HomeComponent {
   active = 'All';
   categories = this.ps.getCategories();
   products = this.ps.getAll();
+  shoes = this.ps.getAllShoes();
+  ac = this.ps.getAllAccessories();
   newArrive = this.ps.getAllNewArrive();
   menu = inject(ProductService);
 

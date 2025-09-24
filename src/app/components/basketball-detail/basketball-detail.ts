@@ -21,10 +21,20 @@ export class BasketballDetail {
     debugger;
     this.basketball = this.ps.getBasketballById(id);
   }
+  currentIndex: number = 0;
+
+  setActiveImage(index: number) {
+    this.currentIndex = index;
+  }
   addShoesToCart() {
     if (this.basketball) {
       this.cart.add(this.basketball, this.qty, this.selectedSize);
     }
     alert('Added to cart!');
+  }
+  addFavorite() {
+    if (this.basketball) {
+      this.cart.addToFavorite(this.basketball, this.qty, this.selectedSize);
+    }
   }
 }
