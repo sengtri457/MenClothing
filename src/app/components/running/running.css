@@ -1,7 +1,7 @@
 .hero-section {
     /* background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-black) 100%);
      */
-    background: url('/assets/image/image.avif') no-repeat center center/cover;
+    background: url('/assets/image/t1.jpg') no-repeat center center/cover;
     color: var(--white);
     padding: 100px 0;
     position: relative;

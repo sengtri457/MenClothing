@@ -1,12 +1,12 @@
 .hero-section {
-    background: url('/assets/image/image.gif') no-repeat center center/cover;
+    background: url('/assets/image/jordan.avif') no-repeat right center/cover;
     color: var(--white);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
 }
 
-s .hero-content {
+.hero-content {
     position: relative;
     z-index: 2;
 }

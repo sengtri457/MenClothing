@@ -147,5 +147,5 @@ export const routes: Routes = [
     component: ClothingDetail,
   },
 
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: 'home' },
 ];

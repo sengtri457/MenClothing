@@ -19,7 +19,7 @@ export class JacketDetail {
   constructor(private route: ActivatedRoute, private ps: ProductService) {
     const id = parseInt(this.route.snapshot.paramMap.get('id') || '0', 10);
     debugger;
-    this.jacket = this.ps.getByHoodieId(id);
+    this.jacket = this.ps.getByJacketId(id);
   }
   currentIndex: number = 0;
 

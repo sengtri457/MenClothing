@@ -8,18 +8,18 @@ export class AcServices {
   public Hat: Hats[] = [
     {
       id: 1,
-      name: 'Classic Black Leather Jacket',
+      name: 'Nike Club',
       category: 'Caps',
-      price: 169,
+      price: 30,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4ede33a6-b717-4b6d-b03e-22432e1e1369/U+NK+CLUB+CAP+U+CB+SM+SWSH+L.png',
       listImage: [
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4ede33a6-b717-4b6d-b03e-22432e1e1369/U+NK+CLUB+CAP+U+CB+SM+SWSH+L.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4da5293e-4cc4-4e54-a36a-c2e48d0977a6/U+NK+CLUB+CAP+U+CB+SM+SWSH+L.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7a41bfb2-7537-4f25-a5fb-b868ca96be61/U+NK+CLUB+CAP+U+CB+SM+SWSH+L.png',
       ],
       description:
-        'Premium leather jacket with modern fit and durable hardware.',
+        'A mid-depth design with classic style for any occasion, this Nike Club cap comes in smooth twill for casual, everyday comfort.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {
@@ -32,82 +32,173 @@ export class AcServices {
     },
     {
       id: 2,
-      name: 'Slim Fit White Oxford Shirt',
+      name: 'Air Jordan Terra',
       category: 'Beanies',
       price: 49,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-      description: 'Crisp oxford shirt with sharp collar — business to casual.',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fdf1d75-d577-4d0c-a166-1340d59c06f9/U+J+TERRA+BEANIE+AJ.png',
+      description:
+        'Soft knit yarn and a low-profile cuffed design let you show off your Jordan pride in warmth, comfort and style.',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2fdf1d75-d577-4d0c-a166-1340d59c06f9/U+J+TERRA+BEANIE+AJ.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8c4df508-0f7e-43a7-bc8d-a29f39b770a0/U+J+TERRA+BEANIE+AJ.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ed04531f-582d-4dd3-bcae-6698352430ae/U+J+TERRA+BEANIE+AJ.png',
       ],
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['White'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 3,
-      name: 'Minimalist Sneakers',
+      name: 'Jordan Apex',
       category: 'Bucket Hats',
-      price: 89,
+      price: 40,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/48961f75-cb72-42ba-8fd0-b3cd3974cd04/U+J+APEX+BUCKET+JUMPMAN.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/48961f75-cb72-42ba-8fd0-b3cd3974cd04/U+J+APEX+BUCKET+JUMPMAN.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c9df2e30-dc12-44ac-b81b-e6c6424f8ee9/U+J+APEX+BUCKET+JUMPMAN.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2ba4d1b1-e46f-458c-9ee3-2752cefc0ee3/U+J+APEX+BUCKET+JUMPMAN.png',
       ],
-      description: 'Clean silhouette, cushioned insole, everyday comfort.',
+      description:
+        'Made from durable Ripstop fabric, our mid-depth Apex bucket hat gives you 360 degrees of coverage. ',
+      sizes: ['S', 'M', 'L', 'XL'],
 
-      sizes: ['40', '41', '42', '43', '44'],
       colors: ['White', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 4,
-      name: 'Chelsea Boots',
+      name: 'Jordan Apex',
       category: 'Bucket Hats',
-      price: 129,
+      price: 29,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/eeebf4d7-9d63-40b0-b771-5bafa0f36e7d/U+J+APEX+BUCKET+WINTER.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/eeebf4d7-9d63-40b0-b771-5bafa0f36e7d/U+J+APEX+BUCKET+WINTER.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ce24b3ba-17f5-4363-aaf4-1ea2e457dc1b/U+J+APEX+BUCKET+WINTER.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e4d8172e-d799-4c22-90a9-1c86092239cb/U+J+APEX+BUCKET+WINTER.png',
       ],
-      description: 'Suede upper, elastic side panels, classic almond toe.',
-      sizes: ['40', '41', '42', '43', '44'],
-      colors: ['Brown', 'Black'],
+      description:
+        'Who said bucket hats are only for warm weather? Made from durable Ripstop fabric on one side and woolly,',
+      sizes: ['S', 'M', 'L', 'XL'],
+
+      colors: ['White', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 5,
-      name: 'Leather Belt',
-      category: 'Beanies',
+      name: 'Nike Club',
+      category: 'Caps',
       price: 35,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/19a48830-992f-4b1b-b321-d543cedc43ee/U+NK+CLUB+CAP+U+CB+CRTZ+PTCH+L.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/19a48830-992f-4b1b-b321-d543cedc43ee/U+NK+CLUB+CAP+U+CB+CRTZ+PTCH+L.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/961b348c-9185-420e-87f0-b75186993645/U+NK+CLUB+CAP+U+CB+CRTZ+PTCH+L.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/21d7e036-23a4-4718-abc2-03cda8f2f1f0/U+NK+CLUB+CAP+U+CB+CRTZ+PTCH+L.png',
       ],
-      description: 'Full-grain leather with brushed metal buckle.',
+      description:
+        'This unstructured cap has a curved bill and an adjustable back strap for a custom fit. An embroidered Cortez ',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 6,
-      name: 'Aviator Sunglasses',
+      name: 'Nike Club',
       category: 'Caps',
-      price: 59,
+      price: 25,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/73fde1f9-7428-4f3d-a1a3-a73f9becfcaf/U+NK+CLUB+CAP+U+CB+AM90+PTCH+L.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/73fde1f9-7428-4f3d-a1a3-a73f9becfcaf/U+NK+CLUB+CAP+U+CB+AM90+PTCH+L.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/50cfad87-3361-4a0b-963e-d92b0e0fb814/U+NK+CLUB+CAP+U+CB+AM90+PTCH+L.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d890716f-aa6b-4bfb-bd53-03f0e6d45899/U+NK+CLUB+CAP+U+CB+AM90+PTCH+L.png',
       ],
-      description: 'UV400 lenses with lightweight metal frame.',
+      description:
+        'This unstructured cap has a curved bill and an adjustable back strap for a comfortable, broken-in fit. An embroidered Air Max 90.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
+    },
+    {
+      id: 7,
+      name: 'Nike Dri-FIT',
+      category: 'Caps',
+      price: 55,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0159d6bc-6bb0-47d8-8a41-d05f9df45200/U+NK+DFADV+FLY+CAP+U+AB+AEROAD.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0159d6bc-6bb0-47d8-8a41-d05f9df45200/U+NK+DFADV+FLY+CAP+U+AB+AEROAD.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7c567eb6-ad96-4a37-b01e-503d4c1bac09/U+NK+DFADV+FLY+CAP+U+AB+AEROAD.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/70b51064-5c8a-42b5-84de-84b9e38b564f/U+NK+DFADV+FLY+CAP+U+AB+AEROAD.png',
+      ],
+      description:
+        'This unstructured cap has a curved bill and an adjustable back strap for a comfortable, broken-in fit. An embroidered Air Max 90.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
+    },
+    {
+      id: 8,
+      name: 'Nike Apex',
+      category: 'Bucket Hats',
+      price: 35,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5b5af06a-f77b-40c9-8aec-7e8fd091f75e/U+NK+APEX+BUCKET+SQ+FUT+WSH+L.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5b5af06a-f77b-40c9-8aec-7e8fd091f75e/U+NK+APEX+BUCKET+SQ+FUT+WSH+L.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6b77776e-63f2-435c-a057-456e790d27b0/U+NK+APEX+BUCKET+SQ+FUT+WSH+L.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ee838251-421c-419c-a8ce-c6e793e92ec8/U+NK+APEX+BUCKET+SQ+FUT+WSH+L.png',
+      ],
+      description:
+        'This unstructured cap has a curved bill and an adjustable back strap for a comfortable, broken-in fit. An embroidered Air Max 90.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
   ];
   getAllHats() {
