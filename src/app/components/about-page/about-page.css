@@ -1,0 +1,35 @@
+/* about-us.component.css */
+.about-container {
+    /* background: url('/assets/image/bg.jpg') center/cover; */
+    background: #383737;
+    background: linear-gradient(180deg, rgba(56, 55, 55, 0.74) 0%, rgba(65, 63, 63, 1) 18%, rgba(17, 17, 17, 1) 29%, rgba(21, 21, 21, 1) 100%);
+    /* Black background */
+    color: #fff;
+    /* White text */
+    padding: 60px 30px;
+}
+
+.about-container h1,
+.about-container h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-container p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.about-container .btn {
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.about-container .btn:hover {
+    background-color: #333;
+    color: #fff;
+}

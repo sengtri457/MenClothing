@@ -27,6 +27,7 @@ import { SockDetail } from './components/sock-detail/sock-detail';
 import { Clothing } from './Main/clothing/clothing';
 import { ClothingDetail } from './Main/clothing-detail/clothing-detail';
 import { Orders } from './components/orders/orders';
+import { AboutPage } from './components/about-page/about-page';
 
 export const routes: Routes = [
   {
@@ -150,6 +151,10 @@ export const routes: Routes = [
   {
     path: 'orders',
     component: Orders,
+  },
+  {
+    path: 'about',
+    component: AboutPage,
   },
   { path: '**', redirectTo: 'home' },
 ];

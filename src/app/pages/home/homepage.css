@@ -12,6 +12,12 @@
     font-size: 14px;
 }
 
+.wrapper-text h2,
+p {
+    background-color: var(--pm-bg);
+    padding-left: 5px;
+}
+
 @keyframes slide {
     0% {
         transform: translateX(0px);

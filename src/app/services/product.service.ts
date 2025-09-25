@@ -389,7 +389,7 @@ export class ProductService implements OnInit {
   public NewArrive: Product[] = [
     {
       id: 1,
-      name: 'Classic Black Leather Jacket',
+      name: 'Classic Black',
       category: 'Graphic T-Shirts',
       price: 169,
       image:
@@ -401,7 +401,7 @@ export class ProductService implements OnInit {
     },
     {
       id: 2,
-      name: 'Classic Black Leather Jacket',
+      name: 'Modenr Black ',
       category: 'Graphic T-Shirts',
       price: 169,
       image:
@@ -413,7 +413,7 @@ export class ProductService implements OnInit {
     },
     {
       id: 3,
-      name: 'Classic Black Leather Jacket',
+      name: 'Noise Perfect',
       category: 'Graphic T-Shirts',
       price: 169,
       image:
@@ -425,7 +425,7 @@ export class ProductService implements OnInit {
     },
     {
       id: 4,
-      name: 'Classic Black Leather Jacket',
+      name: 'White Blank',
       category: 'Graphic T-Shirts',
       price: 169,
       image:
