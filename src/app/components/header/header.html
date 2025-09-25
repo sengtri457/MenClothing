@@ -36,9 +36,9 @@
         <div class="wrapper-search m-auto w-100  text-center">
             <div class="input-container">
                 <input type="text" id="search-input" name="search-input" class="input" placeholder="search..." s
-                    [(ngModel)]="searchRouter" (ngModelChange)="searchItemsRoute()" />
-                <span class="icon">
-                    <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    [(ngModel)]="searchTerm" (keydown.enter)="onSearch()" />
+                <span class="icon" (click)="onSearch()" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <svg width=" 19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -56,6 +56,7 @@
                     </svg>
                 </span>
             </div>
+
             <div class="wrapper-off">
                 <button type="button" class="btn-close mt-5" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>

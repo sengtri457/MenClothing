@@ -3,7 +3,7 @@ import { ProductService } from '../../services/product.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { CartService } from '../../services/cart.service';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +15,7 @@ export class Header implements OnInit {
   isCollapsed = true;
 
   navBar = inject(ProductService);
+  router = inject(Router);
   cart = this.navBar.cart;
   isNav: boolean = false;
   cartItem = inject(CartService);
@@ -33,10 +34,11 @@ export class Header implements OnInit {
     this.checkScroll();
   }
 
-  filteredItems: any[] = [];
-
-  searchItems() {
-    this.filteredItems = this.navBar.searchItems(this.searchTerm);
+  onSearch() {
+    if (this.searchTerm.trim()) {
+      this.router.navigate(['/', this.searchTerm.toLowerCase()]);
+    }
+    this.searchTerm = '';
   }
 
   private checkScroll() {

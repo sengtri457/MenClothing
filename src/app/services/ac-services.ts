@@ -312,17 +312,18 @@ export class AcServices {
     },
     {
       id: 5,
-      name: 'Leather Belt',
+      name: 'Nike Academy Team',
       category: 'Duffel',
-      price: 35,
+      price: 55,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87ab68a5-475c-42ba-a7b3-52002ed4515d/NK+ACDMY+TEAM+M+DUFF.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87ab68a5-475c-42ba-a7b3-52002ed4515d/NK+ACDMY+TEAM+M+DUFF.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/12dfe8bb-2fd3-41f5-b21f-fc5a15d20a69/NK+ACDMY+TEAM+M+DUFF.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c063a1f4-15e8-4ee3-84f0-86fc3c64006d/NK+ACDMY+TEAM+M+DUFF.png',
       ],
-      description: 'Full-grain leather with brushed metal buckle.',
+      description:
+        'The Nike Academy Team Duffel Bag is a durable design built to keep you organised. Designated compartments provide space for your ball, boots and clothes—while multiple straps let you comfortably carry your gear when you re on the go.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {
@@ -335,18 +336,19 @@ export class AcServices {
     },
     {
       id: 6,
-      name: 'Aviator Sunglasses',
+      name: 'Nike Utility Speed 2.0',
       category: 'Backpack',
-      price: 59,
+      price: 105,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cc04bee4-66d9-4900-a71a-948849f6fbf5/NK+UTILITY+SPD+BKPK+-+2.0+GFX.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cc04bee4-66d9-4900-a71a-948849f6fbf5/NK+UTILITY+SPD+BKPK+-+2.0+GFX.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65684ef8-488e-448b-a502-0d6bf354d5c9/NK+UTILITY+SPD+BKPK+-+2.0+GFX.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5a0da73f-4924-4bf9-8bd0-2c64c076acfc/NK+UTILITY+SPD+BKPK+-+2.0+GFX.png',
       ],
-      description: 'UV400 lenses with lightweight metal frame.',
-      sizes: ['S', 'M', 'L', 'XL'],
+      description:
+        'Keep your gear organised with exterior zipped front pockets for small items and a spacious main compartment with a luggage-style zip that opens fully to the bottom. ',
+      sizes: ['ONE SIZE'],
       colors: ['Black'],
       details: {
         material: '100% Premium Leather',
@@ -358,18 +360,19 @@ export class AcServices {
     },
     {
       id: 7,
-      name: 'Aviator Sunglasses',
-      category: 'Backpack',
-      price: 59,
+      name: 'Nike Brasilia',
+      category: 'Duffel',
+      price: 50,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3abc1bcd-ee9f-4328-bb0d-69a57b6db115/NK+BRSLA+S+DUFF+-+9.5+%2841L%29.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3abc1bcd-ee9f-4328-bb0d-69a57b6db115/NK+BRSLA+S+DUFF+-+9.5+%2841L%29.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/040f6f2f-a15c-4e54-8bc1-ade632b52441/NK+BRSLA+S+DUFF+-+9.5+%2841L%29.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8e5e7c5b-ddd4-471d-9afe-5c30dd3e4b1c/NK+BRSLA+S+DUFF+-+9.5+%2841L%29.png',
       ],
-      description: 'UV400 lenses with lightweight metal frame.',
-      sizes: ['S', 'M', 'L', 'XL'],
+      description:
+        'Hit the gym with the duffel bag made to hold all your gear. The ventilated side compartment separates your smelly shoes from your post-sweat-sesh clothes. ',
+      sizes: ['ONE SIZE'],
       colors: ['Black'],
       details: {
         material: '100% Premium Leather',
@@ -381,18 +384,19 @@ export class AcServices {
     },
     {
       id: 8,
-      name: 'Aviator Sunglasses',
-      category: 'Duffel',
-      price: 59,
+      name: 'Nike Heritage',
+      category: 'Backpack',
+      price: 45,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/78f96212-238c-46cd-9f8a-83b5b96a285e/NK+HERITAGE+BKPK-RETRO+PACK.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/78f96212-238c-46cd-9f8a-83b5b96a285e/NK+HERITAGE+BKPK-RETRO+PACK.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8b0d9f45-fe85-4bc3-884b-c086a27cf268/NK+HERITAGE+BKPK-RETRO+PACK.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4f2be2d7-dd46-414e-b57c-70c86d0ecc9f/NK+HERITAGE+BKPK-RETRO+PACK.png',
       ],
-      description: 'UV400 lenses with lightweight metal frame.',
-      sizes: ['S', 'M', 'L', 'XL'],
+      description:
+        'Tried and tested, the Nike Heritage Backpack remains the MVP of lugging around your gear.',
+      sizes: ['ONE SIZE'],
       colors: ['Black'],
       details: {
         material: '100% Premium Leather',
@@ -418,18 +422,18 @@ export class AcServices {
   public Sock: Socks[] = [
     {
       id: 1,
-      name: 'Classic Black Leather Jacket',
+      name: 'Nike Total90',
       category: 'Crew',
-      price: 169,
+      price: 26,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cee7ae7f-fd02-4ff2-956d-81f67d59614f/U+NK+ED+CSH+PLY+CRW+3P-144+T90.png',
       listImage: [
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cee7ae7f-fd02-4ff2-956d-81f67d59614f/U+NK+ED+CSH+PLY+CRW+3P-144+T90.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/69b0f149-19a1-4dd0-a975-e539a6c0d1dc/U+NK+ED+CSH+PLY+CRW+3P-144+T90.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d851ebf-03d2-4f0e-b377-1295c878d356/U+NK+ED+CSH+PLY+CRW+3P-144+T90.png',
       ],
       description:
-        'Premium leather jacket with modern fit and durable hardware.',
+        'With extra cushioning and sweat-wicking fabric, these Total90 socks help keep you comfortable all day long.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {
@@ -442,16 +446,17 @@ export class AcServices {
     },
     {
       id: 2,
-      name: 'Slim Fit White Oxford Shirt',
+      name: 'Nike Sportswear',
       category: 'Ankle',
-      price: 49,
+      price: 26,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-      description: 'Crisp oxford shirt with sharp collar — business to casual.',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/60b9221f-180d-408c-90ba-42e9acd703ea/U+NK+NSW+EVERYDAY+ESSENTIAL+CR.png',
+      description:
+        'The Nike Sportswear Everyday Essential Socks are made from soft, stretchy fabric that moulds to your foot for all-day comfort.',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/60b9221f-180d-408c-90ba-42e9acd703ea/U+NK+NSW+EVERYDAY+ESSENTIAL+CR.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9287b1e2-57fe-4026-8e2b-8c45d582fa3f/U+NK+NSW+EVERYDAY+ESSENTIAL+CR.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2fa8d86a-9d9e-4b70-af79-1ff0d604da9b/U+NK+NSW+EVERYDAY+ESSENTIAL+CR.png',
       ],
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
@@ -465,17 +470,18 @@ export class AcServices {
     },
     {
       id: 3,
-      name: 'Minimalist Sneakers',
+      name: 'Nike Everyday Plus',
       category: 'Crew',
-      price: 89,
+      price: 28,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/43904bb3-bbaf-44c9-9357-38fe88680e3a/U+NK+ED+PLS+CREW+3PR+SPORT+144.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/815a15fc-c3e5-442c-b7a6-fcbcfe53a2a6/M+J+BRK+BL+3.0+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/43904bb3-bbaf-44c9-9357-38fe88680e3a/U+NK+ED+PLS+CREW+3PR+SPORT+144.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/40bc19d8-d5c3-4a1f-b2b9-d86c547753d5/U+NK+ED+PLS+CREW+3PR+SPORT+144.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/69ff347f-03ad-4472-8d65-70b339f4e6b1/U+NK+ED+PLS+CREW+3PR+SPORT+144.png',
       ],
-      description: 'Clean silhouette, cushioned insole, everyday comfort.',
+      description:
+        'Nike Dri-FIT technology helps keep your feet cool and dry while a band around the arch of your foot helps provide a snug and supportive fit.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {
@@ -488,17 +494,18 @@ export class AcServices {
     },
     {
       id: 4,
-      name: 'Chelsea Boots',
+      name: 'Nike Everyday',
       category: 'Knee High',
-      price: 129,
+      price: 22,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/978409c5-7716-4ff1-a04a-44d7bd3cf708/U+NK+ED+CSH+CRW+CORTZ+PTCH+144.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b8fd5f6b-9d87-4119-ae70-977f019c534a/KB+M+NK+DF+TEE+M90+MF.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/978409c5-7716-4ff1-a04a-44d7bd3cf708/U+NK+ED+CSH+CRW+CORTZ+PTCH+144.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/07c346a5-2cd3-44c9-8cd9-635bd4f9705e/U+NK+ED+CSH+CRW+CORTZ+PTCH+144.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e6eed75-0240-4fc3-a575-e9eafd56680f/U+NK+ED+CSH+CRW+CORTZ+PTCH+144.png',
       ],
-      description: 'Suede upper, elastic side panels, classic almond toe.',
+      description:
+        'With extra cushioning under the heel and forefoot, a supportive arch band and sweat-wicking fabric, these socks help keep you comfortable all day long.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {
@@ -511,17 +518,18 @@ export class AcServices {
     },
     {
       id: 5,
-      name: 'Leather Belt',
+      name: 'Nike Running',
       category: 'Knee High',
-      price: 35,
+      price: 18,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/baba516c-b943-4740-ad97-49abf0711c5b/U+NK+MDWT+RUN+MCRW+1PR+-+168.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7c7b9887-eacd-40ca-9596-1f26a48b9f2e/M+J+BRND+BR+SNKR+PCH+SS+CRW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/baba516c-b943-4740-ad97-49abf0711c5b/U+NK+MDWT+RUN+MCRW+1PR+-+168.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/50cd34ea-45f9-4fb8-b56e-bce9e0968222/U+NK+MDWT+RUN+MCRW+1PR+-+168.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/51b70779-d6f2-4f93-af47-38b5fc59bf01/U+NK+MDWT+RUN+MCRW+1PR+-+168.png',
       ],
-      description: 'Full-grain leather with brushed metal buckle.',
+      description:
+        'Introducing Nikes newest running socks. Designed to give you a locked-in fit, they feature sweat-wicking technology and strategically placed cushioning and support.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {
@@ -534,17 +542,18 @@ export class AcServices {
     },
     {
       id: 6,
-      name: 'Aviator Sunglasses',
+      name: 'Nike Running',
       category: 'Crew',
-      price: 59,
+      price: 18,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3ac3eccb-e28b-4cd8-84a5-6e3003172c56/U+NK+MDWT+RUN+NS+1PR+-+168.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3ac3eccb-e28b-4cd8-84a5-6e3003172c56/U+NK+MDWT+RUN+NS+1PR+-+168.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/15a1b5c5-6f9c-4c45-8be5-df872865f4ff/U+NK+MDWT+RUN+NS+1PR+-+168.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5ff65770-b434-4152-bc06-d1a17c1f23dd/U+NK+MDWT+RUN+NS+1PR+-+168.png',
       ],
-      description: 'UV400 lenses with lightweight metal frame.',
+      description:
+        'ntroducing Nikes newest running socks. Designed to give you a locked-in fit, they feature sweat-wicking technology and strategically placed cushioning and support.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {
@@ -557,17 +566,18 @@ export class AcServices {
     },
     {
       id: 7,
-      name: 'Aviator Sunglasses',
+      name: 'Nike',
       category: 'Crew',
       price: 59,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d495f8a7-3b96-4da5-9b6f-c2189076d395/U+NK+TRAIL+RUN+CREW+1PR+-+200.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d495f8a7-3b96-4da5-9b6f-c2189076d395/U+NK+TRAIL+RUN+CREW+1PR+-+200.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ebf13902-f61d-4089-8ad5-f8a733059ab4/U+NK+TRAIL+RUN+CREW+1PR+-+200.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cca03c05-88d2-496b-9d82-2c674965bb6e/U+NK+TRAIL+RUN+CREW+1PR+-+200.png',
       ],
-      description: 'UV400 lenses with lightweight metal frame.',
+      description:
+        'Off-road miles just got a lot more comfortable. Zonal cushioning and a supportive arch help your feet stay comfortable, while sweat-wicking technology helps keep you cool and dry.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {
@@ -580,17 +590,18 @@ export class AcServices {
     },
     {
       id: 8,
-      name: 'Aviator Sunglasses',
+      name: 'Nike Everyday ',
       category: 'Crew',
       price: 59,
       image:
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/26447d1d-edf5-4df8-a816-0b945891f1f2/U+NK+ED+CSH+CREW+2P-144+EMBRDY.png',
       listImage: [
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
-        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/26447d1d-edf5-4df8-a816-0b945891f1f2/U+NK+ED+CSH+CREW+2P-144+EMBRDY.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4daac484-328f-48c3-8ea0-f031aa6d941a/U+NK+ED+CSH+CREW+2P-144+EMBRDY.png',
+        'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/70644faf-2481-4ce6-af81-3b1ad76e5647/U+NK+ED+CSH+CREW+2P-144+EMBRDY.png',
       ],
-      description: 'UV400 lenses with lightweight metal frame.',
+      description:
+        'Your favourite sweat-wicking socks just became much more comfy, with cushioning and a banded arch to add support where you need it most.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {

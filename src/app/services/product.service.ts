@@ -20,7 +20,7 @@ export class ProductService implements OnInit {
   public items: Product[] = [
     {
       id: 1,
-      name: 'Classic Black Leather Jacket',
+      name: 'Classic Black',
       category: 'Graphic T-Shirts',
       price: 169,
       image:
@@ -32,7 +32,7 @@ export class ProductService implements OnInit {
       ],
 
       description:
-        'Premium leather jacket with modern fit and durable hardware.',
+        'Premium Classic Black with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
       details: {

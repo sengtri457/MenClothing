@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Shoes } from '../../models/product.model';
 import { RouterLink } from '@angular/router';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-shoescard',
@@ -10,4 +11,5 @@ import { RouterLink } from '@angular/router';
 })
 export class Shoescard {
   @Input() shoes!: Shoes;
+  constructor(public pro: ProductService) {}
 }
