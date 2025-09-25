@@ -1,0 +1,149 @@
+/* ===== Base helpers ===== */
+.ad-card {
+    border: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 18px;
+}
+
+.ad-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 3;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.ad-cta {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .2);
+    transform: translateY(0);
+    transition: transform .22s ease;
+}
+
+.ad-cta:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ===== Hero gradient banner ===== */
+.hero-ad {
+    background: linear-gradient(135deg, #0f172a 0%, #0ea5a5 100%);
+    color: white;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero-ad .media {
+    width: 140px;
+    height: 140px;
+    border-radius: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 12px 30px rgba(14, 165, 165, .18);
+}
+
+.hero-ad h3 {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.price-pill {
+    background: rgba(255, 255, 255, .12);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+
+/* ===== Glassmorphism card ===== */
+.glass-ad {
+    background: rgba(255, 255, 255, .06);
+    backdrop-filter: blur(6px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, .08);
+    color: #fff;
+    padding: 18px;
+}
+
+
+/* ===== Floating sticky banner (bottom) ===== */
+.sticky-ad {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 360px;
+    z-index: 1050;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+.sticky-ad.hide {
+    transform: translateY(40px) scale(.98);
+    opacity: 0;
+}
+
+.sticky-ad .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 4;
+}
+
+
+/* ===== Carousel micro-ad ===== */
+.micro-ad {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+}
+
+.micro-ad .media {
+    width: 84px;
+    height: 84px;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+}
+
+
+/* ===== Animated sparkle CTA ===== */
+.sparkle {
+    position: relative;
+    overflow: hidden;
+}
+
+.sparkle::after {
+    content: '';
+    position: absolute;
+    left: -60%;
+    top: -30%;
+    width: 60%;
+    height: 160%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.08));
+    transform: rotate(25deg);
+    transition: left .9s ease;
+}
+
+.sparkle:hover::after {
+    left: 120%;
+}
+
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 576px) {
+    .sticky-ad {
+        right: 12px;
+        left: 12px;
+        width: auto;
+    }
+
+    .hero-ad {
+        flex-direction: column;
+        text-align: center;
+    }
+}

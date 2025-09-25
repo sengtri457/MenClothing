@@ -68,6 +68,95 @@
         }@else {
         <p class="text-danger">Please Select Size Before You Order!!</p>
         }
+        <!-- Product Information Section -->
+        @if (product.details) {
+        <div class="product-info mt-5">
+          <h4 class="fw-bold mb-3">Product Information</h4>
+
+          <div class="info-card p-3 rounded-3 shadow-sm mb-3" *ngIf="product.details">
+            <div class="accordion" id="productInfoAccordion">
+
+              <!-- Material -->
+              <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header" id="headingMaterial">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseMaterial">
+                    🧵 Material
+                  </button>
+                </h2>
+                <div id="collapseMaterial" class="accordion-collapse collapse" data-bs-parent="#productInfoAccordion">
+                  <div class="accordion-body text-secondary">
+                    {{ product.details.material }}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fit -->
+              <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header" id="headingFit">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFit">
+                    👕 Fit
+                  </button>
+                </h2>
+                <div id="collapseFit" class="accordion-collapse collapse" data-bs-parent="#productInfoAccordion">
+                  <div class="accordion-body text-secondary">
+                    {{ product.details.fit }}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Care -->
+              <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header" id="headingCare">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseCare">
+                    🧼 Care Instructions
+                  </button>
+                </h2>
+                <div id="collapseCare" class="accordion-collapse collapse" data-bs-parent="#productInfoAccordion">
+                  <div class="accordion-body text-secondary">
+                    {{ product.details.care }}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Origin -->
+              <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header" id="headingOrigin">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOrigin">
+                    🌍 Country of Origin
+                  </button>
+                </h2>
+                <div id="collapseOrigin" class="accordion-collapse collapse" data-bs-parent="#productInfoAccordion">
+                  <div class="accordion-body text-secondary">
+                    {{ product.details.origin }}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Warranty -->
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingWarranty">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseWarranty">
+                    🛡️ Warranty
+                  </button>
+                </h2>
+                <div id="collapseWarranty" class="accordion-collapse collapse" data-bs-parent="#productInfoAccordion">
+                  <div class="accordion-body text-secondary">
+                    {{ product.details.warranty }}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        }@else {
+        <div class="alert alert-warning" role="alert"> No additional product information available.</div>
+        }
       </div>
     </div>
   </div>

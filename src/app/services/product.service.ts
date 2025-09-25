@@ -35,6 +35,13 @@ export class ProductService implements OnInit {
         'Premium leather jacket with modern fit and durable hardware.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 2,
@@ -50,7 +57,14 @@ export class ProductService implements OnInit {
       ],
       description: 'Crisp oxford shirt with sharp collar — business to casual.',
       sizes: ['S', 'M', 'L', 'XL'],
-      colors: ['White'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 3,
@@ -65,8 +79,15 @@ export class ProductService implements OnInit {
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5f2ac174-1e0e-4929-a6bc-9d54e62eaabf/M+NK+TEE+M90+PAINT.png',
       ],
       description: 'Clean silhouette, cushioned insole, everyday comfort.',
-      sizes: ['40', '41', '42', '43', '44'],
-      colors: ['White', 'Black'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 4,
@@ -81,8 +102,15 @@ export class ProductService implements OnInit {
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8c0b0b3f-be8d-4541-b381-cf9a680012ca/M+NSW+TN+TEE.png',
       ],
       description: 'Suede upper, elastic side panels, classic almond toe.',
-      sizes: ['40', '41', '42', '43', '44'],
-      colors: ['Brown', 'Black'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 5,
@@ -98,7 +126,14 @@ export class ProductService implements OnInit {
       ],
       description: 'Full-grain leather with brushed metal buckle.',
       sizes: ['S', 'M', 'L', 'XL'],
-      colors: ['Black', 'Brown'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 6,
@@ -113,6 +148,15 @@ export class ProductService implements OnInit {
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2e664c46-d22e-4682-b506-eacd32e87d73/M+NK+TEE+M90+NAOS.png',
       ],
       description: 'UV400 lenses with lightweight metal frame.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 7,
@@ -127,6 +171,15 @@ export class ProductService implements OnInit {
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2eec7c0e-60c9-4750-a680-e51770bc0e47/FCB+M+NK+T90+WRDMARK+TEE.png',
       ],
       description: 'UV400 lenses with lightweight metal frame.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 8,
@@ -141,6 +194,15 @@ export class ProductService implements OnInit {
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4e98edce-9095-4445-9d91-8d7ed3a37481/U+NSW+TEE+OC+OPEN.png',
       ],
       description: 'UV400 lenses with lightweight metal frame.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
   ];
   public shoes: Shoes[] = [
@@ -390,6 +452,13 @@ export class ProductService implements OnInit {
       description: 'Clean meets casual with this classic hoodie.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 2,
@@ -408,6 +477,13 @@ export class ProductService implements OnInit {
 
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['White'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 3,
@@ -424,6 +500,13 @@ export class ProductService implements OnInit {
       description: 'Clean silhouette, cushioned insole, everyday comfort.',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['White', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 4,
@@ -440,6 +523,13 @@ export class ProductService implements OnInit {
       description: 'Suede upper, elastic side panels, classic almond toe.',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['Brown', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 5,
@@ -457,6 +547,13 @@ export class ProductService implements OnInit {
         'Armour for unpredictable conditions, this roomy, super-warm hoodie is built for taking on the city.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 6,
@@ -472,6 +569,13 @@ export class ProductService implements OnInit {
       ],
       description:
         'When you want to take your game outside but the temps are a tad chilly, throw on this loose-fitting crewneck.',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 7,
@@ -487,6 +591,13 @@ export class ProductService implements OnInit {
       ],
       description:
         'This Chelsea F.C. top pairs the early-2000s energy of Nike iconic football kits with functional style. ',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 8,
@@ -502,6 +613,13 @@ export class ProductService implements OnInit {
       ],
       description:
         'This Windrunner hoodie updates an iconic look with our premium, lightweight Tech Fleece—smooth both inside and out—to give you plenty of warmth without adding bulk. It features Inter Milans crest and colours',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
   ];
   public Tracksuit: Tracksuits[] = [
@@ -521,6 +639,13 @@ export class ProductService implements OnInit {
         'Crafted from stretchy, breathable material, the Nike Tech Woven Jacket offers you ease of movement and adjustable details. ',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 2,
@@ -538,6 +663,13 @@ export class ProductService implements OnInit {
         'Iconic Nike Windrunner style gets an injection of premium comfort with our smooth-on-both-sides fleece. Its paired with a relaxed fit and technical details',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['White'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 3,
@@ -555,6 +687,13 @@ export class ProductService implements OnInit {
         'Crafted from stretchy woven material, these Nike Tech trousers offer you ease of movement and adjustability.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['White', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 4,
@@ -572,6 +711,13 @@ export class ProductService implements OnInit {
         'Made from stretchy, sweat-wicking fabric, these tapered trousers offer a clean Nike Tech look. A roomier fit through',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Brown', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 5,
@@ -589,6 +735,13 @@ export class ProductService implements OnInit {
         'The Heritage Air Max style and smooth, double-knit fabric make this sweat-wicking hoodie a wardrobe staple. ',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 6,
@@ -604,6 +757,15 @@ export class ProductService implements OnInit {
       ],
       description:
         'Built for warm-ups and off-pitch wear, this tracksuit is made from breathable, sweat-wicking knit fabric. ',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 7,
@@ -621,6 +783,13 @@ export class ProductService implements OnInit {
         'Zip up and get out in this roomy woven jacket. Featuring durable, sweat-wicking fabric and a spacious hood, it provides style, comfort and coverage whenever you need.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 8,
@@ -636,6 +805,15 @@ export class ProductService implements OnInit {
       ],
       description:
         'Clean and classic, this knit full-zip top gives you a versatile midweight layer you can wear throughout the year.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
   ];
   public Jacket: Jackets[] = [
@@ -655,6 +833,13 @@ export class ProductService implements OnInit {
         'The Nike Sportswear Windrunner Jacket updates our first running windbreaker with lightweight fabric made from recycled materials. Design details pulled from the original version provide a heritage Nike look.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 2,
@@ -672,6 +857,13 @@ export class ProductService implements OnInit {
         'Built for running, training and yoga, our Unlimited collection helps keep you moving throughout the year, thanks to its premium materials and innovative features.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['White'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 3,
@@ -689,6 +881,13 @@ export class ProductService implements OnInit {
         'Our iconic Windrunner jacket is ready for the next chapter with a packable design and breathable fabric.',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['White', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 4,
@@ -706,6 +905,13 @@ export class ProductService implements OnInit {
         'The Jordan Flight Suit Jacket riffs on the illustrious look of MJs iconic design for a fresh take on heritage. ',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Brown', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 5,
@@ -723,6 +929,13 @@ export class ProductService implements OnInit {
         'Made from everyday layering in mind, this Liverpool Sport Essentials Bomber Jacket is a versatile, unlined version of the original. ',
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 6,
@@ -739,6 +952,13 @@ export class ProductService implements OnInit {
       sizes: ['S', 'M', 'L', 'XL'],
       colors: ['Black', 'Brown'],
       description: 'UV400 lenses with lightweight metal frame.',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 7,
@@ -756,6 +976,13 @@ export class ProductService implements OnInit {
       colors: ['Black', 'Brown'],
       description:
         'Adventure beckons. The Nike ACG Jacket answers the challenge with lightweight, water-repellent fabric thats made from 100% recycled nylon fibres.',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 8,
@@ -773,6 +1000,13 @@ export class ProductService implements OnInit {
       colors: ['Black', 'Brown'],
       description:
         'More than a direct descendant, the Nike Sportswear Windrunner Windbreaker is made to look and feel just like the original Windrunner from 1978. ',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
   ];
   public Running: Runnings[] = [
@@ -792,6 +1026,13 @@ export class ProductService implements OnInit {
         'Take maximum cushioning to the extreme in the Vomero Premium. Two energy-boosting Air Zoom units are surrounded by ultra-soft, responsive ZoomX foam to give you our most comfortable ride yet for everyday road runs.',
       sizes: ['40', '41', '42', '43'],
       colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 2,
@@ -809,6 +1050,13 @@ export class ProductService implements OnInit {
         'Spread your wings and see what nature brings as you chase earthy paths in the Peg Trail 5.',
       sizes: ['40', '41', '42', '43'],
       colors: ['White'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 3,
@@ -826,6 +1074,13 @@ export class ProductService implements OnInit {
         'Spread your wings and see what nature brings as you chase earthy paths in the Peg Trail 5. Now equipped with an ultra-responsive ReactX foam midsole',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['White', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 4,
@@ -843,6 +1098,13 @@ export class ProductService implements OnInit {
         'A tall stack of responsive, light foam offers next-level cushioning.ake maximum cushioning to the next level with the Vomero Plus. It provides an ultra-comfortable ride for everyday runs thanks to a mountainous stack of full-length ZoomX foam',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['Brown', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 5,
@@ -861,6 +1123,13 @@ export class ProductService implements OnInit {
       sizes: ['40', '41', '42', '43', '44'],
 
       colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 6,
@@ -875,9 +1144,15 @@ export class ProductService implements OnInit {
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/80ddd3c6-3219-44be-afdd-963a675bafd1/ZOOMX+VAPORFLY+NEXT%25+4+PRM.png',
       ],
       sizes: ['40', '41', '42', '43', '44'],
-
       description:
         'The Vaporfly 4 is a mile-eating machine that just got lighter. We trimmed weight with a carbon-fibre Flyplate and ultra-responsive ZoomX foam midsole to give you race-day speed without sacrificing performance.',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 7,
@@ -894,6 +1169,13 @@ export class ProductService implements OnInit {
       sizes: ['40', '41', '42', '43', '44'],
       description:
         'The Vaporfly 4 is a mile-eating machine that just got lighter. We trimmed weight with a carbon-fibre Flyplate and ultra-responsive ZoomX foam midsole to give you race-day speed without sacrificing performance.',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 8,
@@ -911,6 +1193,13 @@ export class ProductService implements OnInit {
 
       description:
         'The Vaporfly 4 is a mile-eating machine that just got lighter. We trimmed weight with a carbon-fibre Flyplate and ultra-responsive ZoomX foam midsole to give you race-day speed without sacrificing performance.',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
   ];
   public Basketball: Basketballs[] = [
@@ -930,6 +1219,13 @@ export class ProductService implements OnInit {
         'LeBrons carried the game for two decades. But what if we could help lighten the load? Enter the LeBron XXIII.',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 2,
@@ -947,6 +1243,13 @@ export class ProductService implements OnInit {
         '30K and counting. KD is making history with each passing season, yet theres more work to be done. More grails to go after.',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['White'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 3,
@@ -964,6 +1267,13 @@ export class ProductService implements OnInit {
         'Giannis needs a shoe to dominate the modern positionless game. Thats why weve upgraded the traction pattern on the Giannis Freak 6. ',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['White', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 4,
@@ -981,6 +1291,13 @@ export class ProductService implements OnInit {
         'LeBron isnt slowing down any time soon. The open-court nightmare is as fast and spry as ever. But even Bron needs support when hes at full throttle. Thats why we levelled up the LeBron 22.',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['Brown', 'Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 5,
@@ -998,6 +1315,13 @@ export class ProductService implements OnInit {
         'Ready to stand out? A smooth blend of tie-dye and distressed denim give this Tatum 3 a casual but colourful update thats sure to get noticed.',
       sizes: ['40', '41', '42', '43', '44'],
       colors: ['Black', 'Brown'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 6,
@@ -1014,6 +1338,13 @@ export class ProductService implements OnInit {
       sizes: ['40', '41', '42', '43', '44'],
       description:
         'Luka Dončić plays with zero remorse. He hits game winners without breaking a sweat and leaves defenders looking clueless—and he never feels bad about it.',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 7,
@@ -1030,6 +1361,13 @@ export class ProductService implements OnInit {
       sizes: ['40', '41', '42', '43', '44'],
       description:
         'Luka Dončić plays with zero remorse. He hits game winners without breaking a sweat and leaves defenders looking clueless—and he never feels bad about it.',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 8,
@@ -1046,6 +1384,13 @@ export class ProductService implements OnInit {
       sizes: ['40', '41', '42', '43', '44'],
       description:
         'Luka Dončić plays with zero remorse. He hits game winners without breaking a sweat and leaves defenders looking clueless—and he never feels bad about it.',
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
   ];
   public LifeStyle: LifeStyles[] = [

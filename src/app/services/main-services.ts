@@ -44,7 +44,14 @@ export class MainServices {
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
       ],
       sizes: ['S', 'M', 'L', 'XL'],
-      colors: ['White'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 3,
@@ -59,9 +66,15 @@ export class MainServices {
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
       ],
       description: 'Clean silhouette, cushioned insole, everyday comfort.',
-
-      sizes: ['40', '41', '42', '43', '44'],
-      colors: ['White', 'Black'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 4,
@@ -76,8 +89,15 @@ export class MainServices {
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
       ],
       description: 'Suede upper, elastic side panels, classic almond toe.',
-      sizes: ['40', '41', '42', '43', '44'],
-      colors: ['Brown', 'Black'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 5,
@@ -93,7 +113,14 @@ export class MainServices {
       ],
       description: 'Full-grain leather with brushed metal buckle.',
       sizes: ['S', 'M', 'L', 'XL'],
-      colors: ['Black', 'Brown'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 6,
@@ -108,6 +135,15 @@ export class MainServices {
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
       ],
       description: 'UV400 lenses with lightweight metal frame.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
     {
       id: 7,
@@ -122,6 +158,38 @@ export class MainServices {
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
       ],
       description: 'UV400 lenses with lightweight metal frame.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
+    },
+    {
+      id: 8,
+      name: 'Aviator Sunglasses',
+      category: 'Jacket',
+      price: 59,
+      image:
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+      listImage: [
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/dc6d7499-9663-4f92-aa05-994046de133c/U+NSW+TEE+M90+OC+OPEN.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e1d4a859-6fb6-43f6-9076-3b1b8362eff0/M+J+NC+GOAT+SS+CREW.png',
+        'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f297b0d-3196-496f-b87d-52bbea7cdda3/U+NSW+TEE+OC+FB+GFX+FW+CULTURE.png',
+      ],
+      description: 'UV400 lenses with lightweight metal frame.',
+      sizes: ['S', 'M', 'L', 'XL'],
+      colors: ['Black'],
+      details: {
+        material: '100% Premium Leather',
+        fit: 'Slim Fit',
+        care: 'Dry clean only',
+        origin: 'Made in Italy',
+        warranty: '1-year limited warranty',
+      },
     },
   ];
   getAllClothing() {

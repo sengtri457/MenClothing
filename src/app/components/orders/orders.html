@@ -1,0 +1,119 @@
+<div class="container py-5">
+    <h2 class="fw-bold mb-4 text-center text-uppercase border-bottom pb-2">
+        My Orders
+    </h2>
+
+    <div *ngIf="orders.length > 0; else noOrders">
+        <!-- Orders Display -->
+        <div *ngFor="let order of orders" class="card order-card mb-4 shadow-lg border-0 rounded-4 overflow-hidden">
+            <div class="card-header bg-gradient text-white py-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0 fw-bold">Order #{{ order.orderId }}</h5>
+                    <span class="badge bg-light text-dark">
+                        {{ order.date | date: 'mediumDate' }}
+                    </span>
+                </div>
+            </div>
+
+            <div class="card-body p-4">
+                <ul class="list-group list-group-flush">
+                    <li *ngFor="let item of order.items"
+                        class="list-group-item d-flex align-items-center border-0 px-0 py-3">
+                        <img [src]="item.image" class="me-3 rounded shadow-sm" width="60" height="60"
+                            style="object-fit: cover" />
+                        <div class="flex-grow-1">
+                            <div class="fw-semibold">{{ item.name }}</div>
+                            <small class="text-muted">Size: {{ item.size }} | Qty: {{ item.qty }}</small>
+                        </div>
+                        <div class="fw-bold text-success fs-6">
+                            ${{ item.price * item.qty }}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card-footer bg-light d-flex justify-content-end fw-bold fs-5">
+                Total: ${{ order.total }}
+            </div>
+        </div>
+
+        <!-- Grand Total -->
+        <div class="alert alert-dark text-end fw-bold fs-4 rounded-4 shadow-sm mt-4">
+            All Orders Total: ${{ grandTotal }}
+        </div>
+
+        <!-- Checkout Form -->
+        <div class="card shadow-lg border-0 rounded-4 mt-5">
+            <div class="card-header bg-gradient text-white fw-bold fs-5">
+                Checkout Information
+            </div>
+            <div class="card-body p-4">
+                <form (ngSubmit)="submitCheckout()" #checkoutForm="ngForm">
+                    <!-- Personal Info -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-control" [(ngModel)]="checkoutData.name" name="name"
+                            required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Shipping Address</label>
+                        <textarea id="address" rows="2" class="form-control" [(ngModel)]="checkoutData.address"
+                            name="address" required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" [(ngModel)]="checkoutData.phone" name="phone"
+                            required />
+                    </div>
+
+                    <!-- Payment Methods -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Payment Method</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="bank1" name="payment"
+                                [(ngModel)]="checkoutData.paymentMethod" value="ABA Bank" required />
+                            <label class="form-check-label" for="bank1">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/ABA_Bank_logo.png"
+                                    alt="ABA" width="60" class="me-2" />
+                                ABA Bank
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="bank2" name="payment"
+                                [(ngModel)]="checkoutData.paymentMethod" value="ACLEDA Bank" />
+                            <label class="form-check-label" for="bank2">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/6/68/ACLEDA_Bank_logo.png"
+                                    alt="ACLEDA" width="60" class="me-2" />
+                                ACLEDA Bank
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="bank3" name="payment"
+                                [(ngModel)]="checkoutData.paymentMethod" value="Cash on Delivery" />
+                            <label class="form-check-label" for="bank3">
+                                <i class="bi bi-cash-stack me-2"></i>
+                                Cash on Delivery
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-dark rounded-pill py-2 fw-bold">
+                            Confirm & Checkout
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #noOrders>
+        <div class="text-center text-muted py-5">
+            <i class="bi bi-clipboard-x fs-1"></i>
+            <p class="mt-3">No orders found.</p>
+        </div>
+    </ng-template>
+</div>

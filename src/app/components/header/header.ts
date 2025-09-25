@@ -44,4 +44,8 @@ export class Header implements OnInit {
     this.isNav = sc > 40;
     console.log('scroll:', sc, 'isNav:', this.isNav);
   }
+
+  checkOut() {
+    this.cartItem.checkOut();
+  }
 }

@@ -26,6 +26,7 @@ import { Sock } from './components/sock/sock';
 import { SockDetail } from './components/sock-detail/sock-detail';
 import { Clothing } from './Main/clothing/clothing';
 import { ClothingDetail } from './Main/clothing-detail/clothing-detail';
+import { Orders } from './components/orders/orders';
 
 export const routes: Routes = [
   {
@@ -146,6 +147,9 @@ export const routes: Routes = [
     path: 'clothing/:id',
     component: ClothingDetail,
   },
-
+  {
+    path: 'orders',
+    component: Orders,
+  },
   { path: '**', redirectTo: 'home' },
 ];

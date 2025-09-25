@@ -5,10 +5,16 @@ export interface Product {
   price: number;
   image: string;
   listImage?: string[];
-
   description: string;
   sizes?: string[];
   colors?: string[];
+  details?: {
+    material: string;
+    fit: string;
+    care: string;
+    origin: string;
+    warranty: string;
+  };
 }
 export interface Hoodie {
   id: number;
@@ -17,10 +23,23 @@ export interface Hoodie {
   price: number;
   image: string;
   listImage?: string[];
-
   description: string;
   sizes?: string[];
   colors?: string[];
+  details?: {
+    material: string;
+    fit: string;
+    care: string;
+    origin: string;
+    warranty: string;
+    details?: {
+      material: string;
+      fit: string;
+      care: string;
+      origin: string;
+      warranty: string;
+    };
+  };
 }
 export interface Tracksuits {
   id: number;
@@ -29,10 +48,16 @@ export interface Tracksuits {
   price: number;
   image: string;
   listImage?: string[];
-
   description: string;
   sizes?: string[];
   colors?: string[];
+  details?: {
+    material: string;
+    fit: string;
+    care: string;
+    origin: string;
+    warranty: string;
+  };
 }
 export interface Jackets {
   id: number;
@@ -45,6 +70,13 @@ export interface Jackets {
   description: string;
   sizes?: string[];
   colors?: string[];
+  details?: {
+    material: string;
+    fit: string;
+    care: string;
+    origin: string;
+    warranty: string;
+  };
 }
 export interface Runnings {
   id: number;
@@ -57,6 +89,13 @@ export interface Runnings {
   description: string;
   sizes?: string[];
   colors?: string[];
+  details?: {
+    material: string;
+    fit: string;
+    care: string;
+    origin: string;
+    warranty: string;
+  };
 }
 export interface LifeStyles {
   id: number;
@@ -141,6 +180,13 @@ export interface Basketballs {
   description: string;
   sizes?: string[];
   colors?: string[];
+  details?: {
+    material: string;
+    fit: string;
+    care: string;
+    origin: string;
+    warranty: string;
+  };
 }
 export interface Shoes {
   id: number;
@@ -153,6 +199,13 @@ export interface Shoes {
   description: string;
   sizes?: string[];
   colors?: string[];
+  details?: {
+    material: string;
+    fit: string;
+    care: string;
+    origin: string;
+    warranty: string;
+  };
 }
 export interface Accessory {
   id: number;
@@ -161,8 +214,14 @@ export interface Accessory {
   price: number;
   image: string;
   listImage?: string[];
-
   description: string;
   sizes?: string[];
   colors?: string[];
+  details?: {
+    material: string;
+    fit: string;
+    care: string;
+    origin: string;
+    warranty: string;
+  };
 }
