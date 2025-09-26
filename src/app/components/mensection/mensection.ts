@@ -11,7 +11,6 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-mensection',
   imports: [
-    RouterLink,
     ProductCardComponent,
     CategoryPillsComponent,
     CommonModule,

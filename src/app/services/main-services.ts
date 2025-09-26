@@ -352,6 +352,8 @@ export class MainServices {
   http = inject(HttpClient);
 
   sendMessage(msg: any) {
+    debugger;
+    console.log('Bot Errorr');
     const url = `https://api.telegram.org/bot${this.botToken}/sendMessage`;
     const body = {
       chat_id: this.chatId,
@@ -371,7 +373,7 @@ export class MainServices {
     return this.http.post(url, body);
   }
   sendCustomer(msg: any) {
-    const url = `https://api.telegram.org/bot${this.botToken}/sendPhoto`;
+    const url = `https://api.telegram.org/bot${this.botToken}/sendCustomer`;
     const body = {
       chat_id: this.chatId,
       photo: msg,

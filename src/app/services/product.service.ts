@@ -498,7 +498,8 @@ export class ProductService implements OnInit {
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e09fa0f1-143d-4fdc-a856-aa5b932f08d9/M+NK+CLUB+BB+PO+HOODIE.png',
       ],
       description: 'Clean silhouette, cushioned insole, everyday comfort.',
-      sizes: ['40', '41', '42', '43', '44'],
+      sizes: ['S', 'M', 'L', 'XL'],
+
       colors: ['White', 'Black'],
       details: {
         material: '100% Premium Leather',
@@ -521,7 +522,8 @@ export class ProductService implements OnInit {
         'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/38e4212f-528b-46d3-b974-0c84e31133cb/M+NL+SOLO+SWSH+BB+FZ+HOODIE.png',
       ],
       description: 'Suede upper, elastic side panels, classic almond toe.',
-      sizes: ['40', '41', '42', '43', '44'],
+      sizes: ['S', 'M', 'L', 'XL'],
+
       colors: ['Brown', 'Black'],
       details: {
         material: '100% Premium Leather',
@@ -569,6 +571,8 @@ export class ProductService implements OnInit {
       ],
       description:
         'When you want to take your game outside but the temps are a tad chilly, throw on this loose-fitting crewneck.',
+      sizes: ['S', 'M', 'L', 'XL'],
+
       details: {
         material: '100% Premium Leather',
         fit: 'Slim Fit',
@@ -591,6 +595,8 @@ export class ProductService implements OnInit {
       ],
       description:
         'This Chelsea F.C. top pairs the early-2000s energy of Nike iconic football kits with functional style. ',
+      sizes: ['S', 'M', 'L', 'XL'],
+
       details: {
         material: '100% Premium Leather',
         fit: 'Slim Fit',
@@ -613,6 +619,8 @@ export class ProductService implements OnInit {
       ],
       description:
         'This Windrunner hoodie updates an iconic look with our premium, lightweight Tech Fleece—smooth both inside and out—to give you plenty of warmth without adding bulk. It features Inter Milans crest and colours',
+      sizes: ['S', 'M', 'L', 'XL'],
+
       details: {
         material: '100% Premium Leather',
         fit: 'Slim Fit',
