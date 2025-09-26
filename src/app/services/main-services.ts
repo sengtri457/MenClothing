@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Clothings } from '../models/Main';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
@@ -342,5 +343,41 @@ export class MainServices {
     return c === 'All'
       ? this.Shoes
       : this.Shoes.filter((p) => p.category === c);
+  }
+
+  // telegramBot
+  private botToken = '8381384729:AAG8ImnfH_7qEeg5kDepce42PY0-v0hBYmA';
+  private chatId = '-4899537261';
+
+  http = inject(HttpClient);
+
+  sendMessage(msg: any) {
+    const url = `https://api.telegram.org/bot${this.botToken}/sendMessage`;
+    const body = {
+      chat_id: this.chatId,
+      text: msg,
+    };
+    return this.http.post(url, body);
+  }
+  sendPhoto(photoUrl: string, caption: string) {
+    const url = `https://api.telegram.org/bot${this.botToken}/sendPhoto`;
+    const body = {
+      chat_id: this.chatId,
+      photo: photoUrl,
+      caption,
+      parse_mode: 'Markdown',
+    };
+
+    return this.http.post(url, body);
+  }
+  sendCustomer(msg: any) {
+    const url = `https://api.telegram.org/bot${this.botToken}/sendPhoto`;
+    const body = {
+      chat_id: this.chatId,
+      photo: msg,
+      parse_mode: 'Markdown',
+    };
+
+    return this.http.post(url, body);
   }
 }

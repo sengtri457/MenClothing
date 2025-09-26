@@ -1,0 +1,40 @@
+<div class="container text-center" data-aos="fade-down">
+    <h1 class="fw-bolder m-5">Please Sign Up Your Account!</h1>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <h4 class="title">Sign Up</h4>
+                <form (ngSubmit)="onRegister()" #registerForm="ngForm">
+                    <!-- Email -->
+                    <div class="field">
+                        <i class="bi bi-person-fill input-icon1"></i>
+                        <input autocomplete="off" id="logemail" placeholder="Email" class="input-field" name="email"
+                            type="email" [(ngModel)]="email" required />
+                    </div>
+
+                    <!-- Password -->
+                    <div class="field position-relative">
+                        <i [ngClass]="showPassword ? 'bi bi-eye-fill' : 'bi bi-eye-slash-fill input-icon'"
+                            (click)="togglePasswordVisibility()"></i>
+                        <input autocomplete="off" id="logpass" placeholder="Password" class="input-field"
+                            name="password" type="{{ showPassword ? 'text' : 'password' }}" [(ngModel)]="password"
+                            required />
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="field position-relative">
+                        <i [ngClass]="showConfirmPassword ? 'bi bi-eye-fill' : 'bi bi-eye-slash-fill input-icon2'"
+                            (click)="toggleConfirmPasswordVisibility()"></i>
+                        <input autocomplete="off" id="confirmpass" placeholder="Confirm Password" class="input-field"
+                            name="confirmPassword" type="{{ showConfirmPassword ? 'text' : 'password' }}"
+                            [(ngModel)]="confirmPassword" required />
+                    </div>
+
+                    <button class="btn btn-linkk" type="submit">Sign Up</button>
+                    <br />
+                    <a routerLink="/login" class="text-white text-decoration-none">Already have an account!</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

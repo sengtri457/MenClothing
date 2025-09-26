@@ -1,0 +1,31 @@
+<div class="container text-center m-auto">
+    <h1 class="fw-bolder m-5">Please Login Your Account!</h1>
+    <div class="row sm-auto">
+        <div class="col-12">
+            <div class="card">
+                <h1 class="title">LOGIN</h1>
+                <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+                    <!-- Email -->
+                    <div class="field">
+                        <i class="bi bi-person-fill input-icon1"></i>
+                        <input autocomplete="off" id="logemail" placeholder="Email" class="input-field" name="email"
+                            type="email" [(ngModel)]="email" required />
+                    </div>
+
+                    <!-- Password -->
+                    <div class="field position-relative">
+                        <i [ngClass]="showPassword ? 'bi bi-eye-fill' : 'bi bi-eye-slash-fill input-icon'"
+                            (click)="togglePasswordVisibility()"></i>
+                        <input autocomplete="off" id="logpass" placeholder="Password" class="input-field"
+                            name="password" [type]="showPassword ? 'text' : 'password'" [(ngModel)]="password"
+                            required />
+                    </div>
+
+                    <button class="btn btn-linkk" type="submit">Login</button>
+                    <br />
+                    <a routerLink="/register" class="text-white text-decoration-none">Sign Up</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

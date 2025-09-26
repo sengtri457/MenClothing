@@ -28,6 +28,9 @@ import { Clothing } from './Main/clothing/clothing';
 import { ClothingDetail } from './Main/clothing-detail/clothing-detail';
 import { Orders } from './components/orders/orders';
 import { AboutPage } from './components/about-page/about-page';
+import { LoginPage } from './auth/login-page/login-page';
+import { RegisterPage } from './auth/register-page/register-page';
+import { authGuardGuard } from './auth/auth-guard-guard';
 
 export const routes: Routes = [
   {
@@ -156,5 +159,14 @@ export const routes: Routes = [
     path: 'about',
     component: AboutPage,
   },
+  {
+    path: 'login',
+    component: LoginPage,
+  },
+  {
+    path: 'register',
+    component: RegisterPage,
+  },
+
   { path: '**', redirectTo: 'home' },
 ];

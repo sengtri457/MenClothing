@@ -2,6 +2,7 @@ import { Shoes } from './../models/product.model';
 import { inject, Injectable } from '@angular/core';
 import { Product } from '../models/product.model';
 import { Router } from '@angular/router';
+import { json } from 'stream/consumers';
 
 @Injectable({ providedIn: 'root' })
 export class CartService {
@@ -77,7 +78,7 @@ export class CartService {
     }
 
     const checkoutData = {
-      orderId: Date.now(), // unique ID
+      orderId: Date.now(),
       items: this.items.map((item) => ({
         productId: item.product.id,
         name: item.product.name,
@@ -105,7 +106,9 @@ export class CartService {
   getOrderHistory() {
     return JSON.parse(localStorage.getItem('orderHistory') || '[]');
   }
-
+  clearOrderHistory() {
+    return localStorage.removeItem('orderHistory');
+  }
   // --- Persistence ---
   saveCart() {
     localStorage.setItem('cart', JSON.stringify(this.items));
