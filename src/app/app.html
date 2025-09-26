@@ -1,14 +1,14 @@
 <!-- <app-navbar></app-navbar> -->
 <!-- <app-header /> -->
 <app-header />
-@defer () {
+@defer (on timer(3000ms)) {
 <main class=" pb-5 bg-page">
   <router-outlet></router-outlet>
 </main>
 <app-footer></app-footer>
 }@placeholder {
 <!-- From Uiverse.io by cosnametv -->
-<div class="wrapper-loader">
+<!-- <div class="wrapper-loader">
   <div class="loader">
     <span></span>
     <span></span>
@@ -16,6 +16,21 @@
     <span></span>
     <span></span>
     <span></span>
+  </div>
+</div> -->
+<!-- From Uiverse.io by Praashoo7 -->
+<div class="wrapper-loader">
+
+  <div class="loaders">
+    <span class="l display-5">L</span>
+    <span class="o display-5">o</span>
+    <span class="a display-5">a</span>
+    <span class="d display-5">d</span>
+    <span class="i display-5">i</span>
+    <span class="n display-5">n</span>
+    <span class="g display-5">g</span>
+    <span class="d1 display-5">.</span>
+    <span class="d2 display-5">.</span>
   </div>
 </div>
 }
