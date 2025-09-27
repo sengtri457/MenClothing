@@ -28,7 +28,8 @@
     --accent-text-color: #fff;
     --accent-hover-color: #a11212;
     --font-weight-bold: 600;
-    --body-font-family: sofia-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --body-font-family: "Anton",
+        sans-serif;
 }
 
 html {

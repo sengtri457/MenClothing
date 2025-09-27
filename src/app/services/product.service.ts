@@ -620,7 +620,6 @@ export class ProductService implements OnInit {
       description:
         'This Windrunner hoodie updates an iconic look with our premium, lightweight Tech Fleece—smooth both inside and out—to give you plenty of warmth without adding bulk. It features Inter Milans crest and colours',
       sizes: ['S', 'M', 'L', 'XL'],
-
       details: {
         material: '100% Premium Leather',
         fit: 'Slim Fit',

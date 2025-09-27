@@ -278,12 +278,18 @@
     </div>
   </div>
 </section>
+<!-- videoTag -->
+<section class="video-tag mb-4 mt-4">
+  <video #myVideo autoplay loop muted playsinline height="auto" width="100%">
+    <source src="/assets/image/hm.webm" type="video/webm">
+  </video>
+</section>
 <!-- CATEGORY FILTER -->
 <section class="container py-3 mt-3">
   <h2>Most Selling Product</h2>
 
   <app-category-pills [categories]="categories" [active]="active" (change)="setCategory($event)"></app-category-pills>
-</section>s
+</section>
 <!-- PRODUCT GRID -->
 <section class="container">
   <div class="row g-4">
@@ -292,7 +298,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- PROMO STRIP -->
 <section class="container">

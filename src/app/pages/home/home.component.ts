@@ -1,4 +1,10 @@
-import { Component, inject } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  inject,
+  ViewChild,
+} from '@angular/core';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { ProductService } from '../../services/product.service';
 import { CategoryPillsComponent } from '../../components/category-pills/category-pills.component';
@@ -25,7 +31,7 @@ import { Acessoriescard } from '../../components/acessoriescard/acessoriescard';
   templateUrl: './home.component.html',
   styleUrl: './homepage.css',
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
   ps = inject(ProductService);
   active = 'All';
   categories = this.ps.getCategories();
@@ -34,6 +40,20 @@ export class HomeComponent {
   ac = this.ps.getAllAccessories();
   newArrive = this.ps.getAllNewArrive();
   menu = inject(ProductService);
+
+  @ViewChild('myVideo') videoRef!: ElementRef<HTMLVideoElement>;
+
+  ngAfterViewInit(): void {
+    const video = this.videoRef.nativeElement;
+
+    video.muted = true;
+    video.volume = 0; // extra safety
+
+    video.play();
+
+    video.addEventListener('pause', () => video.play());
+    video.addEventListener('contextmenu', (e) => e.preventDefault());
+  }
 
   setCategory(c: string) {
     this.active = c;
