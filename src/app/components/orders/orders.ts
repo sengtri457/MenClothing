@@ -46,6 +46,7 @@ export class Orders implements OnInit {
   ngOnInit(): void {
     this.orders = this.cartService.getOrderHistory();
     this.grandTotal = this.cartService.getAllOrdersTotal();
+    console.log(this.orders);
   }
 
   submitCheckout() {
