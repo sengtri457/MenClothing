@@ -3,6 +3,7 @@
 <app-header />
 @defer (on timer(3000ms)) {
 <main class=" pb-5 bg-page">
+  <app-scroll-to-top />
   <router-outlet></router-outlet>
 </main>
 <app-footer></app-footer>
@@ -20,7 +21,6 @@
 </div> -->
 <!-- From Uiverse.io by Praashoo7 -->
 <div class="wrapper-loader">
-
   <div class="loaders">
     <span class="l display-5">L</span>
     <span class="o display-5">o</span>
