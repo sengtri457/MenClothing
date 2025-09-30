@@ -625,4 +625,44 @@ export class AcServices {
   getSockByCategory(c: string) {
     return c === 'All' ? this.Sock : this.Sock.filter((p) => p.category === c);
   }
+
+  getSortBag(sortBy: string) {
+    let sorted = [...this.Bag];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortHat(sortBy: string) {
+    let sorted = [...this.Hat];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortSocks(sortBy: string) {
+    let sorted = [...this.Sock];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
 }

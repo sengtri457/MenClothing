@@ -18,4 +18,10 @@ export class Sock {
     this.active = c;
     this.Socks = this.sock.getSockByCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.Socks = this.sock.getSortSocks(value);
+  }
 }

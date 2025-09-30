@@ -28,4 +28,10 @@ export class Jacket {
     this.active = c;
     this.Jacket = this.jc.getJacketByCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.Jacket = this.jc.getSortJacket(value);
+  }
 }

@@ -254,7 +254,10 @@ h2 {
 
 body {
     background: var(--pm-bg);
-    font-family: "Cormorant Upright", serif;
+    font-family: "Helvetica Now Text Medium",
+        Helvetica,
+        Arial,
+        sans-serif;
     font-weight: 300;
     font-style: normal;
 
@@ -370,7 +373,7 @@ body {
         width: 80%;
         top: 44px;
         font-size: 16px;
-        font-weight: 600;
+        /* font-weight: 600; */
         color: var(--pm-accent);
         text-transform: uppercase;
         letter-spacing: 1px;

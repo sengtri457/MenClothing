@@ -43,4 +43,10 @@ export class Mensection implements OnInit {
     this.active = c;
     this.products = this.ps.getByCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.products = this.ps.getSortTshirt(value);
+  }
 }

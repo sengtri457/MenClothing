@@ -19,4 +19,10 @@ export class Hoodies {
     this.active = c;
     this.Hoodie = this.hoodie.getByHoodieCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.Hoodie = this.hoodie.getSortHoodies(value);
+  }
 }

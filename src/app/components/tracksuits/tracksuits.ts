@@ -20,4 +20,10 @@ export class Tracksuits {
     this.active = c;
     this.Tracks = this.track.getByTrackCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.Tracks = this.track.getSortTrack(value);
+  }
 }

@@ -18,4 +18,10 @@ export class Bag {
     this.active = c;
     this.Bags = this.bag.getBagByCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.Bags = this.bag.getSortBag(value);
+  }
 }

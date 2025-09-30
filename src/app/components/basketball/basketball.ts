@@ -18,4 +18,10 @@ export class Basketball {
     this.active = c;
     this.Basketball = this.basketball.getBasketballByCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.Basketball = this.basketball.getSortBasketBall(value);
+  }
 }

@@ -18,4 +18,10 @@ export class Lifestyle {
     this.active = c;
     this.LifeStyle = this.lifestyle.getLifeStyleByCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.LifeStyle = this.lifestyle.getSortlifeStyle(value);
+  }
 }

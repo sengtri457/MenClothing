@@ -382,4 +382,17 @@ export class MainServices {
 
     return this.http.post(url, body);
   }
+  getSorted(sortBy: string) {
+    let sorted = [...this.Clothing]; // copy array so original isn’t changed
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id); // assuming higher id = newer
+      default: // "featured" or fallback
+        return sorted;
+    }
+  }
 }

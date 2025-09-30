@@ -22,33 +22,10 @@
                 <div class="d-flex flex-wrap align-items-center gap-2">
                     <div class="filter-group">
                         <label class="filter-label">Sort By:</label>
-                        <select class="form-select filter-select">
+                        <select class="form-select filter-select" id="sortBy" (change)="onSortChange($event)">
                             <option value="featured">Featured</option>
-                            <option value="price-low">Price: Low to High</option>
-                            <option value="price-high">Price: High to Low</option>
-                            <option value="newest">Newest</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label class="filter-label">Size:</label>
-                        <select class="form-select filter-select">
-                            <option value="all">All Sizes</option>
-                            <option value="xs">XS</option>
-                            <option value="s">S</option>
-                            <option value="m">M</option>
-                            <option value="l">L</option>
-                            <option value="xl">XL</option>
-                            <option value="xxl">XXL</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label class="filter-label">Price:</label>
-                        <select class="form-select filter-select">
-                            <option value="all">All Prices</option>
-                            <option value="0-25">$0 - $25</option>
-                            <option value="25-50">$25 - $50</option>
-                            <option value="50-100">$50 - $100</option>
-                            <option value="100+">$100+</option>
+                            <option value="lowToHigh">Price: Low to High</option>
+                            <option value="highToLow">Price: High to Low</option>
                         </select>
                     </div>
                 </div>

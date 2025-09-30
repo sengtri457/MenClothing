@@ -19,4 +19,10 @@ export class Acessoris {
     this.active = c;
     this.accessories = this.ac.getAcByCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.accessories = this.ac.getSortAc(value);
+  }
 }

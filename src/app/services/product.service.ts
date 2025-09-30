@@ -210,7 +210,7 @@ export class ProductService implements OnInit {
       id: 1,
       name: 'Classic Kobes',
       category: 'Basketball',
-      price: 169,
+      price: 209,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9e4810d6-f090-4afc-862d-775c3b06821f/LEBRON+XXIII+PVD.png',
       listImage: [
@@ -227,7 +227,7 @@ export class ProductService implements OnInit {
       id: 2,
       name: 'Chunky Form',
       category: 'Lifestyle',
-      price: 169,
+      price: 69,
       image:
         'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/lkwfba88t6qix4qxaavi/NIKE+ZOOM+VOMERO+5.png',
       listImage: [
@@ -1779,5 +1779,136 @@ export class ProductService implements OnInit {
 
   addtocart(item: any) {
     this.cart.push(item);
+  }
+  // filter price
+  getSorted(sortBy: string) {
+    let sorted = [...this.items];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortShoes(sortBy: string) {
+    let sorted = [...this.shoes];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortAc(sortBy: string) {
+    let sorted = [...this.Accessories];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortBasketBall(sortBy: string) {
+    let sorted = [...this.Basketball];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortHoodies(sortBy: string) {
+    let sorted = [...this.Hoodies];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortTrack(sortBy: string) {
+    let sorted = [...this.Tracksuit];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortJacket(sortBy: string) {
+    let sorted = [...this.Jacket];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortlifeStyle(sortBy: string) {
+    let sorted = [...this.LifeStyle];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortTshirt(sortBy: string) {
+    let sorted = [...this.items];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
+  }
+  getSortRunning(sortBy: string) {
+    let sorted = [...this.Running];
+    switch (sortBy) {
+      case 'lowToHigh':
+        return sorted.sort((a, b) => a.price - b.price);
+      case 'highToLow':
+        return sorted.sort((a, b) => b.price - a.price);
+      case 'newest':
+        return sorted.sort((a, b) => b.id - a.id);
+      default:
+        return sorted;
+    }
   }
 }

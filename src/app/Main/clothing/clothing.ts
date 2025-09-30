@@ -19,4 +19,10 @@ export class Clothing {
     this.active = c;
     this.Clothings = this.clothing.getClothingByCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.Clothings = this.clothing.getSorted(value);
+  }
 }

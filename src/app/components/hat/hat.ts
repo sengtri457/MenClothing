@@ -19,4 +19,10 @@ export class Hat {
     this.active = c;
     this.Hats = this.hat.getHatByCategory(c);
   }
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.Hats = this.hat.getSortHat(value);
+  }
 }

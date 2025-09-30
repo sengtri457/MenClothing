@@ -26,4 +26,11 @@ export class Running {
     this.active = c;
     this.Running = this.rn.getRunningByCategory(c);
   }
+
+  selectedSort = 'featured';
+  onSortChange(event: any) {
+    const value = event.target.value;
+    this.selectedSort = value;
+    this.Running = this.rn.getSortRunning(value);
+  }
 }
