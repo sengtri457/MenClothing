@@ -14,7 +14,7 @@ import { Info } from '../../components/info/info';
 import { RouterLink } from '@angular/router';
 import { Shoescard } from '../../components/shoescard/shoescard';
 import { Acessoriescard } from '../../components/acessoriescard/acessoriescard';
-
+import 'animate.css';
 @Component({
   standalone: true,
   selector: 'app-home',

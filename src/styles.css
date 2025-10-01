@@ -448,7 +448,7 @@ body {
 .wrapper-text {
     position: absolute;
     top: 55%;
-    left: 5%;
+    left: 35%;
 }
 
 footer {
@@ -472,12 +472,13 @@ footer a:hover {
     }
 
     .wrapper-text {
-        top: 70%;
+        top: 20%;
+        left: 10%;
         width: auto;
     }
 
     .banner img {
-        height: 500px;
+        height: auto;
     }
 }
 
@@ -552,7 +553,11 @@ footer a:hover {
 .wrapper-loader {
     position: absolute;
     padding-top: 20%;
-    left: 40%;
+    left: 35%;
+}
+
+.cover-verticalCarousel-track {
+    transition: all 0.4s ease-in-out;
 }
 
 @media screen and (max-width:768px) {
@@ -829,4 +834,9 @@ footer a:hover {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+/* animation custom */
+.animate__animated {
+    --animate-duration: 1.5s;
 }
