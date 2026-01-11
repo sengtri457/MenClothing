@@ -1,13 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { CartService } from '../../services/cart.service';
-import { ProductCardComponent } from '../product-card/product-card.component';
 import { JacketCard } from '../jacket-card/jacket-card';
 import { CategoryPillsComponent } from '../category-pills/category-pills.component';
 
 @Component({
   selector: 'app-jacket',
-  imports: [ProductCardComponent, JacketCard, CategoryPillsComponent],
+  imports: [JacketCard, CategoryPillsComponent],
   templateUrl: './jacket.html',
   styleUrl: './jacket.css',
 })
